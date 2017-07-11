@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Energized Components ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="EnergizedComponents"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>350</MarketValue>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== AI Chip ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AIChip"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>3000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Joywire ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Joywire"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>3000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Painstopper ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Painstopper"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>3000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Lung ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SyntheticLung"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>1500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Stomach ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SyntheticStomach"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>2000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Liver ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SyntheticLiver"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>2000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Kidney ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SyntheticKidney"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>1500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Heart ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SyntheticHeart"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>2000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Skin ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SyntheticSkin"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>1000</MarketValue>
+		</value>
+	</Operation>
+
+</Patch>

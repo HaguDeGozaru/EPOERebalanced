@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Advanced Bionics ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="AdvancedBionics"]/description</xpath>
+		<value>
+			<description>Upgrade regular bionics with energized components to make them even better. Unlocks new recipes on the bionics workbench.</description>
+		</value>
+	</Operation>
+
+</Patch>

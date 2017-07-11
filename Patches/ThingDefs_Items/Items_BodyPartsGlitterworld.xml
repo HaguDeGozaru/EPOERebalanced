@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- I haven't made any actual changes here; this is just here in case the future calls, or if you wanted to make changes through the patches. -->
+
+	<!-- ========== Muscle Stimulator ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MuscleStimulator"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>3500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Tactical Cornea Implant ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="TacticalCorneaImplant"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>3500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Auxillary AI (Constructing) ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ConstructorCore"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>4500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Auxillary AI (Agricultural) ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="FarmerCore"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>4500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Auxillary AI (Mining) ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="MinerCore"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>4500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Auxillary AI (Medical) ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="DoctorCore"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>4500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Auxillary AI (Diplomatic) ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="DiplomatCore"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>4500</MarketValue>
+		</value>
+	</Operation>
+
+</Patch>

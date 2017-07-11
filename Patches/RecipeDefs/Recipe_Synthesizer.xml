@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Base ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[@Name="RecipeSyntheticOrgan"]/workAmount</xpath>
+		<value>
+			<workAmount>12500</workAmount> <!-- 5 ingame hours -->
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[@Name="RecipeSyntheticOrgan"]/skillRequirements</xpath>
+		<value>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== AI Chip ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAIChip"]/description</xpath>
+		<value>
+			<description>Crafts an AI chip from plasteel, steel, hyperweave, gold and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAIChip"]/ingredients</xpath>
+		<value>
+			<ingredients />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateAIChip"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergizedComponents</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAIChip"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<thingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateAIChip"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Plasteel</li>
+			<li>Steel</li>
+			<li>Hyperweave</li>
+			<li>Gold</li>
+			<li>EnergizedComponents</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Joywire ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateJoywire"]/description</xpath>
+		<value>
+			<description>Crafts a joywire from plasteel, steel, hyperweave, gold and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateJoywire"]/ingredients</xpath>
+		<value>
+			<ingredients />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateJoywire"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergizedComponents</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateJoywire"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<thingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateJoywire"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Plasteel</li>
+			<li>Steel</li>
+			<li>Hyperweave</li>
+			<li>Gold</li>
+			<li>EnergizedComponents</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Painstopper ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreatePainstopper"]/description</xpath>
+		<value>
+			<description>Crafts a painstopper from plasteel, steel, hyperweave, gold and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreatePainstopper"]/ingredients</xpath>
+		<value>
+			<ingredients />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreatePainstopper"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergizedComponents</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreatePainstopper"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<thingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreatePainstopper"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Plasteel</li>
+			<li>Steel</li>
+			<li>Hyperweave</li>
+			<li>Gold</li>
+			<li>EnergizedComponents</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Lung ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLung"]/description</xpath>
+		<value>
+			<description>Crafts a synthetic lung from plasteel, steel, hyperweave, components and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLung"]/ingredients</xpath>
+		<value>
+			<ingredients />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLung"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergizedComponents</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLung"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<thingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLung"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Plasteel</li>
+			<li>Steel</li>
+			<li>Hyperweave</li>
+			<li>Component</li>
+			<li>EnergizedComponents</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Stomach ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticStomach"]/description</xpath>
+		<value>
+			<description>Crafts a synthetic stomach from plasteel, steel, hyperweave, components and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticStomach"]/ingredients</xpath>
+		<value>
+			<ingredients />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticStomach"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergizedComponents</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticStomach"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<thingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticStomach"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Plasteel</li>
+			<li>Steel</li>
+			<li>Hyperweave</li>
+			<li>Component</li>
+			<li>EnergizedComponents</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Liver ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLiver"]/description</xpath>
+		<value>
+			<description>Crafts a synthetic liver from plasteel, steel, hyperweave, components and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLiver"]/ingredients</xpath>
+		<value>
+			<ingredients />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLiver"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergizedComponents</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLiver"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<thingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticLiver"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Plasteel</li>
+			<li>Steel</li>
+			<li>Hyperweave</li>
+			<li>Component</li>
+			<li>EnergizedComponents</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Kidney ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticKidney"]/description</xpath>
+		<value>
+			<description>Crafts a synthetic kidney from plasteel, steel, hyperweave, components and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticKidney"]/ingredients</xpath>
+		<value>
+			<ingredients />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticKidney"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergizedComponents</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticKidney"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<thingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticKidney"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Plasteel</li>
+			<li>Steel</li>
+			<li>Hyperweave</li>
+			<li>Component</li>
+			<li>EnergizedComponents</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Synthetic Heart ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticHeart"]/description</xpath>
+		<value>
+			<description>Crafts a synthetic heart from plasteel, steel, hyperweave, components and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticHeart"]/ingredients</xpath>
+		<value>
+			<ingredients />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticHeart"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hyperweave</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergizedComponents</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSyntheticHeart"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<thingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreateSyntheticHeart"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Plasteel</li>
+			<li>Steel</li>
+			<li>Hyperweave</li>
+			<li>Component</li>
+			<li>EnergizedComponents</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Base ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[@Name="RecipeBionicProsthesis"]/workAmount</xpath>
+		<value>
+			<workAmount>15000</workAmount> <!-- 6 ingame hours -->
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[@Name="RecipeBionicProsthesis"]/skillRequirements</xpath>
+		<value>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>7</minLevel>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Bionic Eye ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicEye"]/description</xpath>
+		<value>
+			<description>Crafts a bionic eye from plasteel, synthread and components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicEye"]/ingredients/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicEye"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicEye"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>35</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicEye"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicEye"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicEye"]/ingredients/li[3]/count</xpath>
+		<value>
+			<count>5</count>
+		</value>
+	</Operation>
+
+	<!-- ========== Power Arm ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreatePowerArm"]/description</xpath>
+		<value>
+			<description>Crafts a power arm from plasteel, steel, synthread, components and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreatePowerArm"]/ingredients/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreatePowerArm"]/ingredients/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreatePowerArm"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>115</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreatePowerArm"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>65</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EnergizedComponents</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreatePowerArm"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="CreatePowerArm"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Steel</li>
+			<li>Synthread</li>
+			<li>Component</li>
+			<li>EnergizedComponents</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Bionic Arm ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicArm"]/description</xpath>
+		<value>
+			<description>Crafts a bionic arm from plasteel, synthread and components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicArm"]/ingredients/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicArm"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicArm"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>65</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicArm"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicArm"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicArm"]/ingredients/li[3]/count</xpath>
+		<value>
+			<count>7</count>
+		</value>
+	</Operation>
+
+	<!-- ========== Bionic Hand ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicHand"]/description</xpath>
+		<value>
+			<description>Crafts a bionic hand from plasteel, synthread and components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicHand"]/ingredients/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicHand"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicHand"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>35</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicHand"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicHand"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicHand"]/ingredients/li[3]/count</xpath>
+		<value>
+			<count>4</count>
+		</value>
+	</Operation>
+
+	<!-- ========== Bionic Foot ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicFoot"]/description</xpath>
+		<value>
+			<description>Crafts a bionic foot from plasteel, synthread and components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicFoot"]/ingredients/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicFoot"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicFoot"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>35</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicFoot"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicFoot"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicFoot"]/ingredients/li[3]/count</xpath>
+		<value>
+			<count>3</count>
+		</value>
+	</Operation>
+
+	<!-- ========== Bionic Leg ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicLeg"]/description</xpath>
+		<value>
+			<description>Crafts a bionic leg from plasteel, synthread and components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicLeg"]/ingredients/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[defName="CreateBionicLeg"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicLeg"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>70</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicLeg"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicLeg"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicLeg"]/ingredients/li[3]/count</xpath>
+		<value>
+			<count>6</count>
+		</value>
+	</Operation>
+
+	<!-- ========== Bionic Ear ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicEar"]/description</xpath>
+		<value>
+			<description>Crafts a bionic ear from plasteel, synthread and components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicEar"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>30</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicEar"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicEar"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+			<li>Component</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Bionic Jaw ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicJaw"]/description</xpath>
+		<value>
+			<description>Crafts a bionic jaw from plasteel, steel, synthread and components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicJaw"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>30</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicJaw"]/ingredients/li[2]/count</xpath>
+		<value>
+			<count>10</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicJaw"]/ingredients/li[2]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicJaw"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
+		<value>
+			<li>Synthread</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Silent Jaw ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSilentJaw"]/description</xpath>
+		<value>
+			<description>Crafts a silent jaw from plasteel, steel, synthread and components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSilentJaw"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>20</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSilentJaw"]/ingredients/li[3]/count</xpath>
+		<value>
+			<count>2</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateSilentJaw"]/ingredients/li[2]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateSilentJaw"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
+		<value>
+			<li>Synthread</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Bionic Spine ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicSpine"]/description</xpath>
+		<value>
+			<description>Crafts a bionic spine from plasteel, steel, synthread and components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicSpine"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>70</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicSpine"]/ingredients/li[2]/count</xpath>
+		<value>
+			<count>25</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateBionicSpine"]/ingredients/li[3]/count</xpath>
+		<value>
+			<count>9</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicSpine"]/ingredients/li[2]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateBionicSpine"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
+		<value>
+			<li>Synthread</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Medical Rib ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateMedicalRib"]/description</xpath>
+		<value>
+			<description>Crafts a medical rib from plasteel, synthread, components and glitterworld medicine.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateMedicalRib"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>20</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateMedicalRib"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateMedicalRib"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+			<li>Component</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Drugged Rib ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateDruggedRib"]/description</xpath>
+		<value>
+			<description>Crafts a drugged rib from plasteel, synthread, components and flake.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateDruggedRib"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>20</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateDruggedRib"]/ingredients/li[2]/count</xpath>
+		<value>
+			<count>8</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateDruggedRib"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateDruggedRib"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+			<li>Component</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Adrenaline Rib ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdrenalineRib"]/description</xpath>
+		<value>
+			<description>Crafts an adrenaline rib from plasteel, synthread, components and wake-up.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdrenalineRib"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>20</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdrenalineRib"]/ingredients/li[2]/filter/thingDefs/li</xpath>
+		<value>
+			<li>WakeUp</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdrenalineRib"]/ingredients/li[2]/count</xpath>
+		<value>
+			<count>3</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateAdrenalineRib"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdrenalineRib"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
+		<value>
+			<li>WakeUp</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreateAdrenalineRib"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+			<li>Component</li>
+		</value>
+	</Operation>
+
+	<!-- ========== Painkiller Rib ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreatePainkillerRib"]/description</xpath>
+		<value>
+			<description>Crafts a painkiller rib from plasteel, synthread, components and go-juice.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreatePainkillerRib"]/ingredients/li[1]/count</xpath>
+		<value>
+			<count>20</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreatePainkillerRib"]/ingredients/li[2]/count</xpath>
+		<value>
+			<count>2</count>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreatePainkillerRib"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/RecipeDef[defName="CreatePainkillerRib"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
+		<value>
+			<li>Synthread</li>
+			<li>Component</li>
+		</value>
+	</Operation>
+
+</Patch>

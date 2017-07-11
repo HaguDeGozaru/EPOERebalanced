@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Advanced Power Arm ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedPowerArm"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>8500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Advanced Bionic Hand ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedPowerArm"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>3000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Advanced Bionic Arm ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedBionicArm"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>5000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Advanced Bionic Leg ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedBionicLeg"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>5000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Advanced Bionic Foot ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedBionicFoot"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>3000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Advanced Bionic Ear ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedBionicEar"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>2500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Advanced Bionic Jaw ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedBionicJaw"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>3000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Advanced Bionic Eye ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedBionicJaw"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>3000</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Advanced Bionic Spine ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedBionicSpine"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>5500</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Exoskeleton Suit ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="ExoskeletonSuit"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>7000</MarketValue>
+		</value>
+	</Operation>
+
+</Patch>

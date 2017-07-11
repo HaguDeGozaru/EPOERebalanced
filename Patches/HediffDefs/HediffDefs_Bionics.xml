@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+   <!-- ========== Power Arm ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="PowerArm"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>1.2</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="PowerArm"]/stages</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="PowerArm"]/comps/li/verbs/li/defaultCooldownTime</xpath>
+		<value>
+			<defaultCooldownTime>1.65</defaultCooldownTime>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="PowerArm"]/comps/li/verbs/li/meleeDamageBaseAmount</xpath>
+		<value>
+			<meleeDamageBaseAmount>15</meleeDamageBaseAmount>
+		</value>
+	</Operation>
+
+   <!-- ========== Bionic Hand ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="BionicHand"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>1.2</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="BionicHand"]/stages</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="BionicHand"]/comps/li/verbs/li/meleeDamageBaseAmount</xpath>
+		<value>
+			<meleeDamageBaseAmount>9</meleeDamageBaseAmount>
+		</value>
+	</Operation>
+
+   <!-- ========== Bionic Foot ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="BionicFoot"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>1.2</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="BionicFoot"]/stages</xpath>
+	</Operation>
+
+   <!-- ========== Bionic Ear ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="BionicEar"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>1.4</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="BionicEar"]/stages</xpath>
+	</Operation>
+
+   <!-- ========== Bionic Jaw ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="BionicJaw"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>1.2</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="BionicJaw"]/stages</xpath>
+	</Operation>
+
+   <!-- ========== Silent Jaw ========== -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="SilentJaw"]/stages/li/capMods/li/offset</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/HediffDef[defName="SilentJaw"]/stages/li/capMods/li</xpath>
+		<value>
+			<setMax>0</setMax>
+		</value>
+	</Operation>
+
+	<!-- ========== Bionic Spine ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="BionicSpine"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>1.1</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="BionicSpine"]/stages</xpath>
+	</Operation>
+
+	<!-- ========== Medical Rib ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="MedicalRib"]/stages/li/capMods/li/offset</xpath>
+		<value>
+			<offset>0.04</offset>
+		</value>
+	</Operation>
+
+	<!-- ========== Adrenaline Rib ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="AdrenalineRib"]/stages/li/capMods/li/capacity</xpath>
+		<value>
+			<capacity>Consciousness</capacity>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="AdrenalineRib"]/stages/li/capMods/li/offset</xpath>
+		<value>
+			<offset>0.025</offset>
+		</value>
+	</Operation>
+
+</Patch>

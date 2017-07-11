@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+   <!-- ========== Brain Stimulator ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="BrainStimulator"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>0.65</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="BrainStimulator"]/stages</xpath>
+	</Operation>
+
+	<!-- ========== Surrogate Lung ========== -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="SurrogateLung"]/stages</xpath>
+	</Operation>
+
+</Patch>

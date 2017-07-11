@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Brain Stimulator ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="BrainStimulator"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>550</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Surrogate Lung ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SurrogateLung"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>350</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Surrogate Stomach ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SurrogateStomach"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>375</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Surrogate Liver ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SurrogateLiver"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>400</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Surrogate Kidney ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SurrogateKidney"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>350</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- ========== Surrogate Heart ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="SurrogateHeart"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>400</MarketValue>
+		</value>
+	</Operation>
+
+</Patch>
