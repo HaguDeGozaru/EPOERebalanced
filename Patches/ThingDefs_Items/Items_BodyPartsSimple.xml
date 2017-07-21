@@ -34,7 +34,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="SimpleProstheticHand"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>375</MarketValue>
+			<MarketValue>350</MarketValue>
 		</value>
 	</Operation>
 
@@ -42,7 +42,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="SimpleProstheticFoot"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>375</MarketValue>
+			<MarketValue>350</MarketValue>
 		</value>
 	</Operation>
 
