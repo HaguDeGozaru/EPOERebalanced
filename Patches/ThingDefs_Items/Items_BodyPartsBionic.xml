@@ -3,6 +3,12 @@
 
 	<!-- ========== Power Arm ========== -->
 	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PowerArm"]/description</xpath>
+		<value>
+			<description>Combines the strength of a bionic arm with the combat capabilities of a power claw. Manipulation still pales compared to a conventional bionic arm though.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="PowerArm"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>2500</MarketValue>

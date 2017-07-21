@@ -3,6 +3,12 @@
 
 	<!-- ========== Advanced Power Arm ========== -->
 	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedPowerArm"]/description</xpath>
+		<value>
+			<description>Plasteel claws means that this arm is more deadly in combat. Although the flexing claws mitigate most of the dexterity penalties associated with standard power arms; three claws will never be as good as five digits, so this will always fall short of the mark in its class.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="AdvancedPowerArm"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>5500</MarketValue>
@@ -34,6 +40,12 @@
 	</Operation>
 
 	<!-- ========== Advanced Bionic Foot ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="AdvancedBionicFoot"]/description</xpath>
+		<value>
+			<description>Further improvements to design and high-grade components allows for a pin drop from ten meters away to be as discernible as a rumble of thunder to normal ears.</description>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="AdvancedBionicFoot"]/statBases/MarketValue</xpath>
 		<value>
