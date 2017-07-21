@@ -129,7 +129,7 @@
    <Operation Class="PatchOperationReplace">
       <xpath>*/HediffDef[defName="AdvancedBionicSpine"]/addedPartProps/partEfficiency</xpath>
       <value>
-         <partEfficiency>1.2</partEfficiency>
+         <partEfficiency>1.3</partEfficiency>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">

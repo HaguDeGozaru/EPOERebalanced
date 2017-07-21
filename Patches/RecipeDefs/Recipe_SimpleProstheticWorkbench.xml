@@ -22,32 +22,59 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSimpleProstheticLeg"]/description</xpath>
 		<value>
-			<description>Crafts a simple prosthetic leg from steel, plasteel, cloth and components.</description>
+			<description>Crafts a simple prosthetic leg from steel, plasteel, cloth, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticLeg"]/ingredients/li[1]/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateSimpleProstheticLeg"]/ingredients</xpath>
 		<value>
-			<count>50</count>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>30</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>3</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticLeg"]/ingredients/li[2]</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateSimpleProstheticLeg"]/fixedIngredientFilter</xpath>
 		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>20</count>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticLeg"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-		<value>
-			<li>Cloth</li>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Plasteel</li>
+					<li>Cloth</li>
+					<li>Component</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
 
@@ -55,110 +82,125 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSimpleProstheticArm"]/description</xpath>
 		<value>
-			<description>Crafts a simple prosthetic arm from steel, plasteel, cloth and components.</description>
+			<description>Crafts a simple prosthetic arm from steel, plasteel, cloth, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticArm"]/ingredients/li[1]/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateSimpleProstheticArm"]/ingredients</xpath>
 		<value>
-			<count>40</count>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>40</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>30</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticArm"]/ingredients/li[3]/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateSimpleProstheticArm"]/fixedIngredientFilter</xpath>
 		<value>
-			<count>4</count>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticArm"]/ingredients/li[2]</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>20</count>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticArm"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-		<value>
-			<li>Cloth</li>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Plasteel</li>
+					<li>Cloth</li>
+					<li>Component</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
 
-	<!-- ========== Simple Prosthetic Hand ========== -->
+	<!-- ========== Simple Prosthetic Hand and Foot ========== -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSimpleProstheticHand"]/description</xpath>
 		<value>
-			<description>Crafts a simple prosthetic hand from steel, plasteel, cloth and components.</description>
+			<description>Crafts a simple prosthetic hand from steel, plasteel, cloth, and components.</description>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticHand"]/ingredients/li[1]/count</xpath>
-		<value>
-			<count>25</count>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticHand"]/ingredients/li[2]</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticHand"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-		<value>
-			<li>Cloth</li>
-		</value>
-	</Operation>
-
-	<!-- ========== Simple Prosthetic Foot ========== -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSimpleProstheticFoot"]/description</xpath>
 		<value>
-			<description>Crafts a simple prosthetic foot from steel, plasteel, cloth and components.</description>
+			<description>Crafts a simple prosthetic foot from steel, plasteel, cloth, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticFoot"]/ingredients/li[1]/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateSimpleProstheticHand" or defName="CreateSimpleProstheticFoot"]/ingredients</xpath>
 		<value>
-			<count>25</count>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>25</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticFoot"]/ingredients/li[3]/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateSimpleProstheticHand" or defName="CreateSimpleProstheticFoot"]/fixedIngredientFilter</xpath>
 		<value>
-			<count>2</count>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticFoot"]/ingredients/li[2]</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateSimpleProstheticFoot"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-		<value>
-			<li>Cloth</li>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Plasteel</li>
+					<li>Cloth</li>
+					<li>Component</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
 
@@ -166,47 +208,50 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateArtificialNose"]/description</xpath>
 		<value>
-			<description>Crafts an artificial nose from steel, plasteel and cloth.</description>
+			<description>Crafts an artificial nose from steel, plasteel, and cloth.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateArtificialNose"]/ingredients/li/filter/thingDefs/li</xpath>
+		<xpath>*/RecipeDef[defName="CreateArtificialNose"]/ingredients</xpath>
 		<value>
-			<li>Steel</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateArtificialNose"]/ingredients/li</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>15</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateArtificialNose"]/fixedIngredientFilter/thingDefs/li</xpath>
+		<xpath>*/RecipeDef[defName="CreateArtificialNose"]/fixedIngredientFilter</xpath>
 		<value>
-			<li>Steel</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateArtificialNose"]/fixedIngredientFilter/thingDefs/li</xpath>
-		<value>
-			<li>Plasteel</li>
-			<li>Cloth</li>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Plasteel</li>
+					<li>Cloth</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
 
@@ -214,41 +259,59 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateHydraulicJaw"]/description</xpath>
 		<value>
-			<description>Crafts a hydraulic jaw from steel, plasteel, cloth and components.</description>
+			<description>Crafts a hydraulic jaw from steel, plasteel, cloth, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateHydraulicJaw"]/ingredients/li[1]/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateHydraulicJaw"]/ingredients</xpath>
 		<value>
-			<count>25</count>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>30</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>25</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateHydraulicJaw"]/ingredients/li[1]</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateHydraulicJaw"]/fixedIngredientFilter</xpath>
 		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateHydraulicJaw"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
-		<value>
-			<li>Plasteel</li>
-			<li>Cloth</li>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Plasteel</li>
+					<li>Cloth</li>
+					<li>Component</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
 
@@ -261,53 +324,59 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateLightReceptor"]/description</xpath>
 		<value>
-			<description>Crafts a light receptor from steel, plasteel, cloth and components.</description>
+			<description>Crafts a light receptor from steel, plasteel, cloth, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateLightReceptor"]/ingredients/li[1]/filter/thingDefs/li</xpath>
+		<xpath>*/RecipeDef[defName="CreateLightReceptor"]/ingredients</xpath>
 		<value>
-			<li>Steel</li>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>25</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateLightReceptor"]/ingredients/li[2]/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateLightReceptor"]/fixedIngredientFilter</xpath>
 		<value>
-			<count>2</count>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateLightReceptor"]/ingredients/li[1]</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateLightReceptor"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
-		<value>
-			<li>Steel</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateLightReceptor"]/fixedIngredientFilter/thingDefs/li[1]</xpath>
-		<value>
-			<li>Plasteel</li>
-			<li>Cloth</li>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Plasteel</li>
+					<li>Cloth</li>
+					<li>Component</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
 
@@ -315,81 +384,84 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/description</xpath>
 		<value>
-			<description>Crafts an artificial pelvis from steel, plasteel and cloth.</description>
+			<description>Crafts an artificial pelvis from steel and plasteel.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/ingredients/li[1]/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/ingredients</xpath>
 		<value>
-			<count>35</count>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>40</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>15</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/ingredients/li[2]/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/fixedIngredientFilter</xpath>
 		<value>
-			<count>15</count>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/ingredients/li[2]</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>20</count>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-		<value>
-			<li>Cloth</li>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Plasteel</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
 
 	<!-- ========== Artificial Clavicle ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateArtificialClavicle"]/description</xpath>
+		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/description</xpath>
 		<value>
-			<description>Crafts an artificial clavicle from steel, plasteel and cloth.</description>
+			<description>Crafts an artificial clavicle from steel and plasteel.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateArtificialClavicle"]/ingredients/li/count</xpath>
+		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/ingredients</xpath>
 		<value>
-			<count>30</count>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>35</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateArtificialClavicle"]/ingredients/li</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateArtificialPelvis"]/fixedIngredientFilter</xpath>
 		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Plasteel</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/RecipeDef[defName="CreateArtificialClavicle"]/fixedIngredientFilter/thingDefs/li</xpath>
-		<value>
-			<li>Plasteel</li>
-			<li>Cloth</li>
-		</value>
-	</Operation>
-
+	
 </Patch>
