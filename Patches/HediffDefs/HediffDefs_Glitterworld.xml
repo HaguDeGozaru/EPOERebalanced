@@ -5,7 +5,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/HediffDef[defName="TacticalCorneaImplant"]/stages/li/statOffsets/ShootingAccuracy</xpath>
 		<value>
-			<ShootingAccuracy>0.25</ShootingAccuracy> <!-- Equivalent to +5 levels -->
+			<ShootingAccuracy>0.125</ShootingAccuracy> <!-- Equivalent to +2.5 levels -->
 		</value>
 	</Operation>
 

@@ -21,7 +21,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="SurrogateStomach"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>375</MarketValue>
+			<MarketValue>400</MarketValue>
 		</value>
 	</Operation>
 

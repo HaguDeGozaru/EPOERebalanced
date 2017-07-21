@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>XeoNovaDan's EPOE Rebalance</name>
+  <name>EPOE: Rebalanced</name>
   <author>XeoNovaDan</author>
-  <url></url>
+  <url>https://ludeon.com/forums/index.php?topic=34572.0</url>
   <targetVersion>0.17.1557</targetVersion>
-  <description>Current Version: v0.3\n\nExtensively rebalances items from EPOE:\n* Re-factors most recipes and market values\n* Any part above 'Basic' tier also needs the intellectual skill to be crafted\n* All parts use the part efficiency model as opposed to capacity offsets.\n* Power arms have been heavily nerfed. They're still good, but no longer OP.\n* Glitterworld implants now have offsets based on the equivalent of a certain amount of levels</description>
+  <description>Current Version: v1.0.1\n\nExtensively rebalances items from EPOE:\n* Re-factors most recipes and market values\n* Any part above 'Basic' tier also needs the intellectual skill to be crafted\n* All appropriate parts use the part efficiency model as opposed to capacity offsets.\n* Various parts (e.g. power arms) have been re-balanced too\n* Workbench building is less material and more component intensive</description>
 </ModMetaData>

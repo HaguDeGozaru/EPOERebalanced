@@ -22,59 +22,55 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateBrainStimulator"]/description</xpath>
 		<value>
-			<description>Crafts a brain stimulator from steel, plasteel, cloth and components.</description>
+			<description>Crafts a brain stimulator from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateBrainStimulator"]/ingredients</xpath>
 		<value>
-			<ingredients />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateBrainStimulator"]/ingredients</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>40</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>25</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Component</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>45</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>15</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateBrainStimulator"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
 			<thingDefs>
+				<li>Cloth</li>
 				<li>Steel</li>
 				<li>Plasteel</li>
-				<li>Cloth</li>
 				<li>Component</li>
 			</thingDefs>
 		</value>
@@ -84,65 +80,57 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateLung"]/description</xpath>
 		<value>
-			<description>Crafts a surrogate lung from steel, plasteel, cloth and components.</description>
+			<description>Crafts a surrogate lung from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateLung"]/ingredients</xpath>
 		<value>
-			<ingredients />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLung"]/ingredients</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>25</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Component</li>
-					</thingDefs>
-				</filter>
-				<count>3</count>
-			</li>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>15</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>3</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateLung"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
-			<thingDefs />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLung"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Steel</li>
-			<li>Plasteel</li>
-			<li>Cloth</li>
-			<li>Component</li>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
 		</value>
 	</Operation>
 
@@ -150,65 +138,57 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateStomach"]/description</xpath>
 		<value>
-			<description>Crafts a surrogate stomach from steel, plasteel, cloth and components.</description>
+			<description>Crafts a surrogate stomach from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateStomach"]/ingredients</xpath>
 		<value>
-			<ingredients />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateStomach"]/ingredients</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>30</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Component</li>
-					</thingDefs>
-				</filter>
-				<count>3</count>
-			</li>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>35</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>3</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateStomach"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
-			<thingDefs />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateStomach"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Steel</li>
-			<li>Plasteel</li>
-			<li>Cloth</li>
-			<li>Component</li>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
 		</value>
 	</Operation>
 
@@ -216,65 +196,57 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateLiver"]/description</xpath>
 		<value>
-			<description>Crafts a surrogate liver from steel, plasteel, cloth and components.</description>
+			<description>Crafts a surrogate liver from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateLiver"]/ingredients</xpath>
 		<value>
-			<ingredients />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLiver"]/ingredients</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>30</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Component</li>
-					</thingDefs>
-				</filter>
-				<count>4</count>
-			</li>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>30</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>4</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateLiver"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
-			<thingDefs />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLiver"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Steel</li>
-			<li>Plasteel</li>
-			<li>Cloth</li>
-			<li>Component</li>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
 		</value>
 	</Operation>
 
@@ -282,131 +254,115 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/description</xpath>
 		<value>
-			<description>Crafts a surrogate kidney from steel, plasteel, cloth and components.</description>
+			<description>Crafts a surrogate kidney from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/ingredients</xpath>
 		<value>
-			<ingredients />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/ingredients</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>30</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Component</li>
-					</thingDefs>
-				</filter>
-				<count>3</count>
-			</li>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>15</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>3</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
-			<thingDefs />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Steel</li>
-			<li>Plasteel</li>
-			<li>Cloth</li>
-			<li>Component</li>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
 		</value>
 	</Operation>
 
 	<!-- ========== Surrogate Heart ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/description</xpath>
+		<xpath>*/RecipeDef[defName="CreateSurrogateHeart"]/description</xpath>
 		<value>
-			<description>Crafts a surrogate heart from steel, plasteel, cloth and components.</description>
+			<description>Crafts a surrogate heart from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/ingredients</xpath>
+		<xpath>*/RecipeDef[defName="CreateSurrogateHeart"]/ingredients</xpath>
 		<value>
-			<ingredients />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/ingredients</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>35</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cloth</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Component</li>
-					</thingDefs>
-				</filter>
-				<count>4</count>
-			</li>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>30</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>4</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/fixedIngredientFilter/thingDefs</xpath>
+		<xpath>*/RecipeDef[defName="CreateSurrogateHeart"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
-			<thingDefs />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Steel</li>
-			<li>Plasteel</li>
-			<li>Cloth</li>
-			<li>Component</li>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Component</li>
+			</thingDefs>
 		</value>
 	</Operation>
 

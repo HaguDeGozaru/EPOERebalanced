@@ -20,5 +20,11 @@
 			<Component>8</Component>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="TableBionics"]/recipes/li[1]</xpath>
+		<value>
+			<li>CreatePowerClaw</li>
+		</value>
+	</Operation>
 
 </Patch>

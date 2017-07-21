@@ -3,9 +3,15 @@
 
 	<!-- ========== Power Arm ========== -->
 	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="PowerArm"]/description</xpath>
+		<value>
+			<description>Combines the strength of a bionic arm with the combat capabilities of a power claw. Manipulation still pales compared to a conventional bionic arm though.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="PowerArm"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>4000</MarketValue>
+			<MarketValue>2500</MarketValue>
 		</value>
 	</Operation>
 
@@ -51,7 +57,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="SilentJaw"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>650</MarketValue>
+			<MarketValue>625</MarketValue>
 		</value>
 	</Operation>
 
@@ -81,7 +87,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="BionicArm"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1750</MarketValue> <!-- unchanged, but here just in case -->
+			<MarketValue>1500</MarketValue>
 		</value>
 	</Operation>
 
@@ -89,7 +95,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="BionicLeg"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1750</MarketValue> <!-- unchanged, but here just in case -->
+			<MarketValue>1500</MarketValue>
 		</value>
 	</Operation>
 
@@ -97,15 +103,15 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="PowerClaw"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1750</MarketValue>
+			<MarketValue>1500</MarketValue>
 		</value>
 	</Operation>
 
-	<!-- ========== Power Claw ========== -->
+	<!-- ========== Scyther Blade ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="PowerClaw"]/statBases/MarketValue</xpath>
+		<xpath>*/ThingDef[defName="ScytherBlade"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1750</MarketValue>
+			<MarketValue>2000</MarketValue> <!-- vanilla -->
 		</value>
 	</Operation>
 
@@ -113,7 +119,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="MedicalRib"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>650</MarketValue>
+			<MarketValue>600</MarketValue>
 		</value>
 	</Operation>
 
@@ -121,7 +127,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="DruggedRib"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>650</MarketValue>
+			<MarketValue>600</MarketValue>
 		</value>
 	</Operation>
 
@@ -135,7 +141,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="AdrenalineRib"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>650</MarketValue>
+			<MarketValue>600</MarketValue>
 		</value>
 	</Operation>
 
@@ -143,7 +149,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="PainkillerRib"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>650</MarketValue>
+			<MarketValue>600</MarketValue>
 		</value>
 	</Operation>
 
