@@ -22,6 +22,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicEye"]/label</xpath>
 		<value>
+<<<<<<< HEAD
 			<label>Craft advanced bionic eye</label>
 		</value>
 	</Operation>
@@ -32,6 +33,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+=======
+			<description>Crafts an advanced bionic eye from plasteel, hyperweave, components, and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+>>>>>>> origin/master
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicEye"]/ingredients</xpath>
 		<value>
 			<ingredients>
@@ -160,7 +167,10 @@
 			</ingredients>
 		</value>
 	</Operation>
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateAdvancedPowerArm"]/fixedIngredientFilter</xpath>
 		<value>
@@ -188,6 +198,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicArm"]/label</xpath>
 		<value>
+<<<<<<< HEAD
 			<label>Craft advanced bionic arm</label>
 		</value>
 	</Operation>
@@ -245,6 +256,59 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+=======
+			<description>Crafts an advanced bionic arm from plasteel, chemfuel, hyperweave, components, and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicArm"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Chemfuel</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Hyperweave</li>
+						</thingDefs>
+					</filter>
+					<count>30</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>6</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>EnergizedComponents</li>
+						</thingDefs>
+					</filter>
+					<count>3</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+>>>>>>> origin/master
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicArm"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
@@ -263,6 +327,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicHand"]/label</xpath>
 		<value>
+<<<<<<< HEAD
 			<label>Craft advanced bionic hand</label>
 		</value>
 	</Operation>
@@ -273,6 +338,12 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+=======
+			<description>Crafts an advanced bionic hand from plasteel, chemfuel, hyperweave, components, and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+>>>>>>> origin/master
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicHand"]/ingredients</xpath>
 		<value>
 			<ingredients>
@@ -338,12 +409,62 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicFoot"]/label</xpath>
 		<value>
+<<<<<<< HEAD
 			<label>Craft advanced bionic foot</label>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicFoot"]/description</xpath>
 		<value>
+			<description>Crafts an advanced bionic foot from plasteel, chemfuel, hyperweave, components, and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicFoot"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>35</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Chemfuel</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Hyperweave</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>EnergizedComponents</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+			</ingredients>
+=======
 			<description>Crafts an advanced bionic foot from plasteel, chemfuel, hyperweave, components, and energized components.</description>
 		</value>
 	</Operation>
@@ -406,6 +527,22 @@
 					<li>EnergizedComponents</li>
 				</thingDefs>
 			</fixedIngredientFilter>
+>>>>>>> origin/master
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicFoot"]/fixedIngredientFilter</xpath>
+		<value>
+<<<<<<< HEAD
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Plasteel</li>
+					<li>Chemfuel</li>
+					<li>Hyperweave</li>
+					<li>Component</li>
+					<li>EnergizedComponents</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
 
@@ -420,9 +557,74 @@
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicLeg"]/description</xpath>
 		<value>
 			<description>Crafts an advanced bionic leg from plasteel, chemfuel, hyperweave, components, and energized components.</description>
+=======
+			<description>Crafts an advanced bionic leg from plasteel, chemfuel, hyperweave, components, and energized components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicLeg"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>55</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Chemfuel</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Hyperweave</li>
+						</thingDefs>
+					</filter>
+					<count>30</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>4</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>EnergizedComponents</li>
+						</thingDefs>
+					</filter>
+					<count>3</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicLeg"]/fixedIngredientFilter</xpath>
+		<value>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Plasteel</li>
+					<li>Chemfuel</li>
+					<li>Hyperweave</li>
+					<li>Component</li>
+					<li>EnergizedComponents</li>
+				</thingDefs>
+			</fixedIngredientFilter>
+>>>>>>> origin/master
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+<<<<<<< HEAD
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicLeg"]/ingredients</xpath>
 		<value>
 			<ingredients>
@@ -489,9 +691,7 @@
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicJaw"]/label</xpath>
 		<value>
 			<label>Craft advanced bionic jaw</label>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
+=======
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicJaw"]/description</xpath>
 		<value>
 			<description>Crafts an advanced bionic jaw from plasteel, hyperweave, components, and energized components.</description>
@@ -547,6 +747,89 @@
 					<li>EnergizedComponents</li>
 				</thingDefs>
 			</fixedIngredientFilter>
+>>>>>>> origin/master
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicJaw"]/description</xpath>
+		<value>
+<<<<<<< HEAD
+			<description>Crafts an advanced bionic jaw from plasteel, hyperweave, components, and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicJaw"]/ingredients</xpath>
+=======
+			<description>Crafts an advanced bionic ear from plasteel, chemfuel, hyperweave, components, and energized components.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicEar"]/ingredients</xpath>
+>>>>>>> origin/master
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+<<<<<<< HEAD
+					<count>40</count>
+=======
+					<count>35</count>
+>>>>>>> origin/master
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Hyperweave</li>
+						</thingDefs>
+					</filter>
+<<<<<<< HEAD
+					<count>25</count>
+=======
+					<count>20</count>
+>>>>>>> origin/master
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>EnergizedComponents</li>
+						</thingDefs>
+					</filter>
+<<<<<<< HEAD
+					<count>2</count>
+=======
+					<count>1</count>
+>>>>>>> origin/master
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+<<<<<<< HEAD
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicJaw"]/fixedIngredientFilter</xpath>
+=======
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicEar"]/fixedIngredientFilter</xpath>
+>>>>>>> origin/master
+		<value>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Plasteel</li>
+					<li>Hyperweave</li>
+					<li>Component</li>
+					<li>EnergizedComponents</li>
+				</thingDefs>
+			</fixedIngredientFilter>
 		</value>
 	</Operation>
 
@@ -554,6 +837,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicEar"]/label</xpath>
 		<value>
+<<<<<<< HEAD
 			<label>Craft advanced bionic ear</label>
 		</value>
 	</Operation>
@@ -613,11 +897,15 @@
 					<li>EnergizedComponents</li>
 				</thingDefs>
 			</fixedIngredientFilter>
+=======
+			<description>Crafts an advanced bionic spine from plasteel, chemfuel, hyperweave, gold, uranium, components, and energized components.</description>
+>>>>>>> origin/master
 		</value>
 	</Operation>
 
 	<!-- ========== Advanced Bionic Spine ========== -->
 	<Operation Class="PatchOperationReplace">
+<<<<<<< HEAD
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicSpine"]/label</xpath>
 		<value>
 			<label>Craft advanced bionic spine</label>
@@ -693,6 +981,71 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
+=======
+		<xpath>*/RecipeDef[defName="CreateAdvancedBionicSpine"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>65</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Chemfuel</li>
+						</thingDefs>
+					</filter>
+					<count>35</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Hyperweave</li>
+						</thingDefs>
+					</filter>
+					<count>40</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Gold</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Uranium</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>9</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>EnergizedComponents</li>
+						</thingDefs>
+					</filter>
+					<count>3</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+>>>>>>> origin/master
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicSpine"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
@@ -709,16 +1062,19 @@
 		</value>
 	</Operation>
 
-	<!-- ========== Exoskeleton Suit ========== -->
+	<!-- ========== Advanced Bionic Spine ========== -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateExoskeletonSuit"]/label</xpath>
 		<value>
+<<<<<<< HEAD
 			<label>Craft exoskeleton suit</label>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateExoskeletonSuit"]/description</xpath>
 		<value>
+=======
+>>>>>>> origin/master
 			<description>Crafts an exoskeleton suit from plasteel, chemfuel, hyperweave, gold, uranium, components, and energized components.</description>
 		</value>
 	</Operation>
