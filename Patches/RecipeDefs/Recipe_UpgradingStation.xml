@@ -95,7 +95,6 @@
 		<xpath>*/RecipeDef[defName="CreateAdvancedPowerArm"]/description</xpath>
 		<value>
 			<description>Crafts an advanced power arm from plasteel, chemfuel, hyperweave, gold, uranium, components, and energized components.</description>
-<<<<<<< HEAD
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -161,9 +160,6 @@
 			</ingredients>
 		</value>
 	</Operation>
-=======
-		</value>
-	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateAdvancedPowerArm"]/ingredients</xpath>
 		<value>
@@ -227,8 +223,6 @@
 			</ingredients>
 		</value>
 	</Operation>
->>>>>>> origin/master
-
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="CreateAdvancedPowerArm"]/fixedIngredientFilter</xpath>
 		<value>
@@ -263,7 +257,6 @@
 		<xpath>*/RecipeDef[defName="CreateAdvancedBionicArm"]/description</xpath>
 		<value>
 			<description>Crafts an advanced bionic arm from plasteel, chemfuel, hyperweave, components, and energized components.</description>
-<<<<<<< HEAD
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -311,10 +304,6 @@
 					<count>3</count>
 				</li>
 			</ingredients>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-=======
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
