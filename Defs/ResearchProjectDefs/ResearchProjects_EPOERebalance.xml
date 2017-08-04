@@ -7,11 +7,7 @@
 		<defName>RetractableClaws</defName>
 		<label>retractable claws</label>
 		<description>Explore the concept of using energized components to retract small claws quickly and efficiently into a bionic hand. Allows for the production of power claws and power arms at a bionics workbench.</description>
-<<<<<<< HEAD
 		<baseCost>2500</baseCost>
-=======
-		<baseCost>1500</baseCost>
->>>>>>> origin/master
 		<techLevel>Spacer</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<prerequisites>
@@ -21,8 +17,7 @@
 		<researchViewX>3.5</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
-
-<<<<<<< HEAD
+	
 	<ResearchProjectDef>
 		<defName>SpineReplacements</defName>
 		<label>spine replacements</label>
@@ -37,19 +32,13 @@
 		<researchViewX>3.5</researchViewX>
 		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
-
-=======
->>>>>>> origin/master
+	
 	<!-- ========== Tier 4 ========== -->
 	<ResearchProjectDef>
 		<defName>FlexibleClaws</defName>
 		<label>flexible claws</label>
 		<description>Optimise claw design and component usage to allow for claws to flex and unflex to improve dexterity. Allows for the production of advanced power arms.</description>
-<<<<<<< HEAD
 		<baseCost>1500</baseCost>
-=======
-		<baseCost>2500</baseCost>
->>>>>>> origin/master
 		<techLevel>Spacer</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
@@ -61,7 +50,6 @@
 		</prerequisites>
 		<tab>EPOE</tab>
 		<researchViewX>5</researchViewX>
-<<<<<<< HEAD
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
@@ -93,8 +81,6 @@
 		</prerequisites>
 		<tab>EPOE</tab>
 		<researchViewX>6</researchViewX>
-=======
->>>>>>> origin/master
 		<researchViewY>1.5</researchViewY>
 	</ResearchProjectDef>
 
