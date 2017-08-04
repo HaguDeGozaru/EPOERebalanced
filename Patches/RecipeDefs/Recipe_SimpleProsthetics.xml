@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Patch>
-
-	<!-- ========== Golden Eye ========== -->
-	<Operation Class="PatchOperationRemove">
-		<xpath>*/RecipeDef[defName="InstallGoldenEye"]</xpath>
-	</Operation>
-
-</Patch>
