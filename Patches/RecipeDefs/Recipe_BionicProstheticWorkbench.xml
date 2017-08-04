@@ -630,15 +630,12 @@
 					<li>Component</li>
 				</thingDefs>
 			</fixedIngredientFilter>
-<<<<<<< HEAD
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/RecipeDef[defName="CreateBionicSpine"]</xpath>
 		<value>
 			<researchPrerequisite>SpineReplacements</researchPrerequisite>
-=======
->>>>>>> origin/master
 		</value>
 	</Operation>
 
