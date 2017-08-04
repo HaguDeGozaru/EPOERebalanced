@@ -6,6 +6,7 @@
 		<xpath>*/HediffDef[defName="PowerArm"]/addedPartProps/partEfficiency</xpath>
 		<value>
 			<partEfficiency>1.2</partEfficiency>
+			<isGoodWeapon>true</isGoodWeapon>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
@@ -89,7 +90,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/HediffDef[defName="BionicSpine"]/addedPartProps/partEfficiency</xpath>
 		<value>
-			<partEfficiency>1.1</partEfficiency>
+			<partEfficiency>1.2</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">

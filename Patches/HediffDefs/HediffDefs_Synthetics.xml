@@ -25,6 +25,21 @@
 			<offset>0.1</offset>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="AIPersonaCore"]/stages/li/mentalStateGivers</xpath>
+		<value>
+			<mentalStateGivers>
+				<li>
+					<mentalState>Berserk</mentalState>
+					<mtbDays>14</mtbDays>
+				</li>
+				<li>
+					<mentalState>WanderPsychotic</mentalState>
+					<mtbDays>8</mtbDays>
+				</li>
+			</mentalStateGivers>
+		</value>
+	</Operation>
 
 	<!-- ========== Synthetic Lung ========== -->
 	<Operation Class="PatchOperationReplace">

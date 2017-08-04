@@ -42,7 +42,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/HediffDef[defName="HookHand"]/comps/li/verbs/li/defaultCooldownTime</xpath>
 		<value>
-			<defaultCooldownTime>1.8</defaultCooldownTime>
+			<defaultCooldownTime>1.6</defaultCooldownTime>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -56,7 +56,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/HediffDef[defName="denture"]/addedPartProps/partEfficiency</xpath>
 		<value>
-			<partEfficiency>0.8</partEfficiency>
+			<partEfficiency>0.65</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">

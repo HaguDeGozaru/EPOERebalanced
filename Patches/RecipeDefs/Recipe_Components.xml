@@ -11,59 +11,51 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="MakeEnergizedComponent"]/ingredients</xpath>
 		<value>
-			<ingredients />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="MakeEnergizedComponent"]/ingredients</xpath>
-		<value>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Component</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Uranium</li>
-					</thingDefs>
-				</filter>
-				<count>3</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Gold</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Component</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Uranium</li>
+						</thingDefs>
+					</filter>
+					<count>3</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Gold</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName="MakeEnergizedComponent"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
-			<thingDefs />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="MakeEnergizedComponent"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Component</li>
-			<li>Uranium</li>
-			<li>Gold</li>
-			<li>Plasteel</li>
+			<thingDefs>
+				<li>Component</li>
+				<li>Uranium</li>
+				<li>Gold</li>
+				<li>Plasteel</li>
+			</thingDefs>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">

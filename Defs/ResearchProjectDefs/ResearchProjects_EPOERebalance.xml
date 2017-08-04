@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResearchProjectDefs>
+
+
+	<!-- ========== Tier 3 ========== -->
+	<ResearchProjectDef>
+		<defName>RetractableClaws</defName>
+		<label>retractable claws</label>
+		<description>Explore the concept of using energized components to retract small claws quickly and efficiently into a bionic hand. Allows for the production of power claws and power arms at a bionics workbench.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<prerequisites>
+			<li>Bionics</li>
+		</prerequisites>
+		<tab>EPOE</tab>
+		<researchViewX>3.5</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>SpineReplacements</defName>
+		<label>spine replacements</label>
+		<description>Perform extensive studies on the way that the human spine actually works, and how to replace a spine without causing any complications whatsoever. Allows for the production and installation of bionic spines.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<prerequisites>
+			<li>Bionics</li>
+		</prerequisites>
+		<tab>EPOE</tab>
+		<researchViewX>3.5</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- ========== Tier 4 ========== -->
+	<ResearchProjectDef>
+		<defName>FlexibleClaws</defName>
+		<label>flexible claws</label>
+		<description>Optimise claw design and component usage to allow for claws to flex and unflex to improve dexterity. Allows for the production of advanced power arms.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>AdvancedBionics</li>
+			<li>RetractableClaws</li>
+		</prerequisites>
+		<tab>EPOE</tab>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>AdvancedSpineReplacements</defName>
+		<label>advanced spines</label>
+		<description>Discover the use of energized components in spine replacements. Allows for the production of advanced bionic spines.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<prerequisites>
+			<li>AdvancedBionics</li>
+			<li>SpineReplacements</li>
+		</prerequisites>
+		<tab>EPOE</tab>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ExoskeletonSuits</defName>
+		<label>exoskeleton suits</label>
+		<description>Utilise absolute cutting-edge motor technology and the knowledge of ergonomics to understand the concept of exoskeletons and replicate this with humans. Allows for the production and installation of exoskeleton suits.</description>
+		<baseCost>4500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<prerequisites>
+			<li>AdvancedBionics</li>
+		</prerequisites>
+		<tab>EPOE</tab>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

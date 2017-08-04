@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-   <!-- ========== Golden Eye ========== -->
-	<!--<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="GoldenEye"]/addedPartProps/partEfficiency</xpath>
-		<value>
-			<partEfficiency>0</partEfficiency>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="GoldenEye"]/stages/li/capMods</xpath>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="GoldenEye"]/stages/li/statOffsets/SocialImpact</xpath>
-		<value>
-			<SocialImpact>0.0825</SocialImpact>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="GoldenEye"]/stages/li/statOffsets/RecruitPrisonerChance</xpath>
-		<value>
-			<RecruitPrisonerChance>0.12</RecruitPrisonerChance>
-		</value>
-	</Operation> -->
-
 	<!-- ========== Golden Eye ========== -->
 	<Operation Class="PatchOperationRemove">
 		<xpath>*/HediffDef[defName="GoldenEye"]</xpath>
@@ -38,6 +15,12 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>*/HediffDef[defName="SimpleProstheticArm"]/comps</xpath>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="SimpleProstheticArm"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>0.5</partEfficiency>
+		</value>
+	</Operation>
 
 	<!-- ========== Hydraulic Jaw ========== -->
 	<Operation Class="PatchOperationRemove">
@@ -46,7 +29,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/HediffDef[defName="HydraulicJaw"]/addedPartProps/partEfficiency</xpath>
 		<value>
-			<partEfficiency>0.9</partEfficiency>
+			<partEfficiency>0.85</partEfficiency>
 		</value>
 	</Operation>
 
