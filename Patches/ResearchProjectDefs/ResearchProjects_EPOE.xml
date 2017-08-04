@@ -3,9 +3,15 @@
 
 	<!-- ========== Rib Replacements ========== -->
 	<Operation Class="PatchOperationReplace">
+<<<<<<< HEAD
 		<xpath>*/ResearchProjectDef[defName="RibReplacements"]/researchViewX</xpath>
 		<value>
 			<researchViewX>3</researchViewX>
+=======
+		<xpath>*/ResearchProjectDef[defName="RibReplacements"]/researchViewY</xpath>
+		<value>
+			<researchViewY>0</researchViewY>
+>>>>>>> origin/master
 		</value>
 	</Operation>
 
@@ -16,12 +22,27 @@
 			<description>Discover the use of energised components in the fabrication of circuits smaller and more intricate, but also more efficient than ever, to produce top-end bionic body parts. Unlocks new recipes on the bionics workbench.</description>
 		</value>
 	</Operation>
+<<<<<<< HEAD
 
 	<!-- ========== Brain Surgery ========== -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ResearchProjectDef[defName="BrainSurgery"]/researchViewX</xpath>
 		<value>
 			<researchViewX>3</researchViewX>
+=======
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="AdvancedBionics"]/researchViewY</xpath>
+		<value>
+			<researchViewY>2</researchViewY>
+		</value>
+	</Operation>
+
+	<!-- ========== Brain Surgery ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="BrainSurgery"]/researchViewY</xpath>
+		<value>
+			<researchViewY>3</researchViewY>
+>>>>>>> origin/master
 		</value>
 	</Operation>
 
