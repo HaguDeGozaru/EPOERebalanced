@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Bionics Workbench ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableBionics"]/CostList/Steel</xpath> <!-- had to read it ;) -->
+		<value>
+			<Steel>120</Steel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableBionics"]/CostList/Plasteel</xpath>
+		<value>
+			<Plasteel>40</Plasteel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableBionics"]/CostList/Component</xpath>
+		<value>
+			<Component>8</Component>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName="TableBionics"]/recipes/li[1]</xpath>
+		<value>
+			<li>CreatePowerClaw</li>
+		</value>
+	</Operation>
+
+</Patch>

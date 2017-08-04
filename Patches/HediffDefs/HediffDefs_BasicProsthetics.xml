@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Steel Arm ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="SteelArm"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>0.35</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="SteelArm"]/comps/li/verbs/li/defaultCooldownTime</xpath>
+		<value>
+			<defaultCooldownTime>2</defaultCooldownTime>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="SteelArm"]/comps/li/verbs/li/meleeDamageBaseAmount</xpath>
+		<value>
+			<meleeDamageBaseAmount>7</meleeDamageBaseAmount>
+		</value>
+	</Operation>
+
+	<!-- ========== Eye Patch ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="EyePatch"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>0</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="EyePatch"]/stages</xpath>
+	</Operation>
+
+	<!-- ========== Hook Hand ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="HookHand"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>0.25</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="HookHand"]/comps/li/verbs/li/defaultCooldownTime</xpath>
+		<value>
+			<defaultCooldownTime>1.6</defaultCooldownTime>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="HookHand"]/comps/li/verbs/li/meleeDamageBaseAmount</xpath>
+		<value>
+			<meleeDamageBaseAmount>7</meleeDamageBaseAmount>
+		</value>
+	</Operation>
+
+	<!-- ========== Denture ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="denture"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>0.65</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="denture"]/stages</xpath>
+	</Operation>
+
+	<!-- ========== Ear Bandage ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="EarBandage"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>0</partEfficiency>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/HediffDef[defName="EarBandage"]/stages</xpath>
+	</Operation>
+
+</Patch>

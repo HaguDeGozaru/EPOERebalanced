@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Rib Replacements ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="RibReplacements"]/researchViewX</xpath>
+		<value>
+			<researchViewX>3</researchViewX>
+		</value>
+	</Operation>
+
+	<!-- ========== Advanced Bionics ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="AdvancedBionics"]/description</xpath>
+		<value>
+			<description>Discover the use of energised components in the fabrication of circuits smaller and more intricate, but also more efficient than ever, to produce top-end bionic body parts. Unlocks new recipes on the bionics workbench.</description>
+		</value>
+	</Operation>
+
+	<!-- ========== Brain Surgery ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ResearchProjectDef[defName="BrainSurgery"]/researchViewX</xpath>
+		<value>
+			<researchViewX>3</researchViewX>
+		</value>
+	</Operation>
+
+</Patch>
