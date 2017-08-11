@@ -20,5 +20,11 @@
 			<Component>10</Component>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableOrgans"]/statBases/WorkToMake</xpath>
+		<value>
+			<WorkToBuild>4000</WorkToBuild>
+		</value>
+	</Operation>
 
 </Patch>

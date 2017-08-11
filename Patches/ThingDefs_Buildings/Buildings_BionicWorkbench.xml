@@ -26,5 +26,11 @@
 			<li>CreatePowerClaw</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableBionics"]/statBases/WorkToMake</xpath>
+		<value>
+			<WorkToBuild>4500</WorkToBuild>
+		</value>
+	</Operation>
 
 </Patch>

@@ -17,5 +17,11 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>*/ThingDef[DefName="TableSimpleProsthetic"]/recipes/li[10]</xpath> <!-- removes golden eye recipe -->
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableSimpleProsthetic"]/statBases/WorkToMake</xpath>
+		<value>
+			<WorkToBuild>3000</WorkToBuild>
+		</value>
+	</Operation>
 
 </Patch>

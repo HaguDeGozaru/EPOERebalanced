@@ -14,5 +14,11 @@
 			<Steel>20</Steel>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[DefName="TableBasicProsthetic"]/statBases/WorkToMake</xpath>
+		<value>
+			<WorkToBuild>2000</WorkToBuild> <!-- and nobody reports this issue in base EPOE... no more instant workbenches, muahahaha! -->
+		</value>
+	</Operation>
 
 </Patch>
