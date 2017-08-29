@@ -11,6 +11,12 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/ThingDefs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
 		<value>
+			<tickerType>Rare</tickerType>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/ThingDefs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
+		<value>
 			<comps>
 				<li Class="CompProperties_Rottable">
 					<daysToRotStart>2</daysToRotStart>
