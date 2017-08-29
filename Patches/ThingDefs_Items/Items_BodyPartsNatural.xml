@@ -8,6 +8,17 @@
 			<SellPriceFactor>0.4</SellPriceFactor> <!-- Make prisoner harvesting less OP -->
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/ThingDefs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
+		<value>
+			<comps>
+				<li Class="CompProperties_Rottable">
+					<daysToRotStart>2</daysToRotStart>
+					<rotDestroys>true</rotDestroys>
+				</li>
+			</comps>
+		</value>
+	</Operation>
 
 	<!-- ========== Leg ========== -->
 	<Operation Class="PatchOperationReplace">
@@ -35,7 +46,7 @@
 
 	<!-- ========== Heart ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Arm"]/statBases/MarketValue</xpath>
+		<xpath>*/ThingDef[defName="Heart"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>1250</MarketValue>
 		</value>
