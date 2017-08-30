@@ -2,8 +2,14 @@
 <Patch>
 
    <!-- ========== AI Chip ========== -->
+   <Operation Class="PatchOperationAdd">
+		<xpath>*/HediffDef[defName="AIChip"]/stages/li</xpath>
+		<value>
+			<partIgnoreMissingHP>true</partIgnoreMissingHP>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="AIChip"]/stages</xpath>
+		<xpath>*/HediffDef[defName="AIChip"]/stages/li/capMods</xpath>
 	</Operation>
 
 	<!-- ========== AI Persona Core ========== -->

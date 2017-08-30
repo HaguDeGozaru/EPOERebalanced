@@ -2,14 +2,22 @@
 <Patch>
 
    <!-- ========== Brain Stimulator ========== -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="BrainStimulator"]/addedPartProps/partEfficiency</xpath>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/HediffDef[defName="BrainStimulator"]/stages/li</xpath>
 		<value>
-			<partEfficiency>0.65</partEfficiency>
+			<partIgnoreMissingHP>true</partIgnoreMissingHP>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="BrainStimulator"]/stages</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/HediffDef[defName="BrainStimulator"]/stages/li/capMods</xpath>
+		<value>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.65</postFactor>
+				</li>
+			</capMods>
+		</value>
 	</Operation>
 
 	<!-- ========== Surrogate Lung ========== -->
