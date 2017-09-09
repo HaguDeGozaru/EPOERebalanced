@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Patch all ParentNames ========== -->
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>*/RecipeDef[defName="InstallNaturalHeart" or defName="InstallNaturalLiver" or defName="InstallNaturalKidney" or defName="InstallNaturalLung" or defName="InstallNaturalEye" or defName="InstallNaturalNose" or defName="InstallNaturalEar" or defName="InstallNaturalJaw" or defName="InstallNaturalArm" or defName="InstallNaturalLeg" or defName="InstallNaturalStomach"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SurgeryFlesh</value>
+	</Operation>
+
+	<!-- ========== Patch work time ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="InstallNaturalHeart" or defName="InstallNaturalLiver" or defName="InstallNaturalKidney" or defName="InstallNaturalLung" or defName="InstallNaturalEye" or defName="InstallNaturalNose" or defName="InstallNaturalEar" or defName="InstallNaturalJaw" or defName="InstallNaturalArm" or defName="InstallNaturalLeg" or defName="InstallNaturalStomach"]/workAmount</xpath>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="InstallNaturalHeart" or defName="InstallNaturalLiver" or defName="InstallNaturalKidney" or defName="InstallNaturalLung" or defName="InstallNaturalEye" or defName="InstallNaturalNose" or defName="InstallNaturalEar" or defName="InstallNaturalJaw" or defName="InstallNaturalArm" or defName="InstallNaturalLeg" or defName="InstallNaturalStomach"]/workerClass</xpath>
+		<value>
+			<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="InstallNaturalHeart" or defName="InstallNaturalLiver" or defName="InstallNaturalKidney" or defName="InstallNaturalLung" or defName="InstallNaturalEye" or defName="InstallNaturalNose" or defName="InstallNaturalEar" or defName="InstallNaturalJaw" or defName="InstallNaturalArm" or defName="InstallNaturalLeg" or defName="InstallNaturalStomach"]</xpath>
+		<value>
+			<addsHediff>NaturalOrganRejection</addsHediff>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+	<!-- ========== Patch all ParentNames ========== -->
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>*/RecipeDef[defName="InstallAdvancedPowerArm" or defName="InstallAdvancedBionicArm" or defName="InstallAdvancedBionicLeg" or defName="InstallAdvancedBionicHand" or defName="InstallAdvancedBionicFoot" or defName="InstallAdvancedBionicEye" or defName="InstallAdvancedBionicEar" or defName="InstallAdvancedBionicJaw" or defName="InstallAdvancedBionicSpine" or defName="InstallExoskeletonSuit"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SurgeryFlesh</value>
+	</Operation>
+
+	<!-- ========== Patch work time ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="InstallAdvancedPowerArm" or defName="InstallAdvancedBionicArm" or defName="InstallAdvancedBionicLeg" or defName="InstallAdvancedBionicHand" or defName="InstallAdvancedBionicFoot" or defName="InstallAdvancedBionicEye" or defName="InstallAdvancedBionicEar" or defName="InstallAdvancedBionicJaw" or defName="InstallAdvancedBionicSpine" or defName="InstallExoskeletonSuit"]/workAmount</xpath>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
 	<!-- ========== Advanced Bionic Spine ========== -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/RecipeDef[defName="InstallAdvancedBionicSpine"]</xpath>

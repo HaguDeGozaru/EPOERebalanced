@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef>
+		<defName>NaturalOrganRejection</defName>
+		<hediffClass>Hediff_AddedPart</hediffClass> <!-- comps should still work as this is a child of HediffWithComps -->
+		<defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
+		<label>rejection</label>
+		<initialSeverity>0.15</initialSeverity>
+		<tendable>true</tendable>
+		<addedPartProps>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<tendDuration>180000</tendDuration>
+				<severityPerDayTended>-0.13333</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.0667</severityPerDayNotImmune>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>managed</label>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.1</minSeverity>
+				<painOffset>0.1</painOffset>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>severe</label>
+				<minSeverity>0.4</minSeverity>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<minSeverity>0.8</minSeverity>
+				<painOffset>0.2</painOffset>
+				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+			</li>
+			<li>
+				<label>destructive</label>
+				<minSeverity>1</minSeverity>
+				<painOffset>0.3</painOffset>
+				<partEfficiencyOffset>-1</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

@@ -3,12 +3,6 @@
 
 	<!-- ========== Base ========== -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>/ThingDefs/ThingDef[@Name="BodyPartNaturalBase"]/statBases</xpath> <!-- Patches the vanilla base -->
-		<value>
-			<SellPriceFactor>0.4</SellPriceFactor> <!-- Make prisoner harvesting less OP -->
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
 		<xpath>/ThingDefs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
 		<value>
 			<tickerType>Rare</tickerType>
@@ -30,7 +24,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Leg"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1000</MarketValue>
+			<MarketValue>400</MarketValue>
 		</value>
 	</Operation>
 
@@ -38,7 +32,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Arm"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1000</MarketValue>
+			<MarketValue>400</MarketValue>
 		</value>
 	</Operation>
 
@@ -46,7 +40,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Stomach"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1000</MarketValue>
+			<MarketValue>500</MarketValue>
 		</value>
 	</Operation>
 
@@ -54,7 +48,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Heart"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1250</MarketValue>
+			<MarketValue>500</MarketValue>
 		</value>
 	</Operation>
 
@@ -62,7 +56,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Liver"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1250</MarketValue>
+			<MarketValue>500</MarketValue>
 		</value>
 	</Operation>
 
@@ -70,7 +64,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Lung"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>1000</MarketValue>
+			<MarketValue>400</MarketValue>
 		</value>
 	</Operation>
 
@@ -78,7 +72,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Kidney"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>625</MarketValue>
+			<MarketValue>250</MarketValue>
 		</value>
 	</Operation>
 
@@ -86,7 +80,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Eye"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>625</MarketValue>
+			<MarketValue>250</MarketValue>
 		</value>
 	</Operation>
 
@@ -94,7 +88,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Nose"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>500</MarketValue>
+			<MarketValue>250</MarketValue>
 		</value>
 	</Operation>
 
@@ -102,7 +96,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Ear"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>500</MarketValue>
+			<MarketValue>250</MarketValue>
 		</value>
 	</Operation>
 
@@ -110,7 +104,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName="Jaw"]/statBases/MarketValue</xpath>
 		<value>
-			<MarketValue>500</MarketValue>
+			<MarketValue>250</MarketValue>
 		</value>
 	</Operation>
 

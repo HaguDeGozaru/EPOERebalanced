@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Patch all ParentNames ========== -->
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>*/RecipeDef[defName="InstallAIChip" or defName="InstallAIPersonaCore" or defName="InstallJoywire" or defName="InstallPainstopper" or defName="InstallSyntheticLung" or defName="InstallSyntheticStomach" or defName="InstallSyntheticLiver" or defName="InstallSyntheticKidney" or defName="InstallSyntheticHeart"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SurgeryFlesh</value>
+	</Operation>
+
+	<!-- ========== Patch work time ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="InstallAIChip" or defName="InstallAIPersonaCore" or defName="InstallJoywire" or defName="InstallPainstopper" or defName="InstallSyntheticLung" or defName="InstallSyntheticStomach" or defName="InstallSyntheticLiver" or defName="InstallSyntheticKidney" or defName="InstallSyntheticHeart"]/workAmount</xpath>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
+</Patch>

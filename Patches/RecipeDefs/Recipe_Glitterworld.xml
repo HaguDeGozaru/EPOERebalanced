@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ========== Patch all ParentNames ========== -->
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>*/RecipeDef[defName="InstallMuscleStimulatorArms" or defName="InstallMuscleStimulatorLegs" or defName="InstallTacticalCorneaImplant" or defName="InstallConstructorCore" or defName="InstallFarmerCore" or defName="InstallMinerCore" or defName="InstallDoctorCore" or defName="InstallDiplomatCore"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SurgeryFlesh</value>
+	</Operation>
+
+	<!-- ========== Patch work time ========== -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName="InstallMuscleStimulatorArms" or defName="InstallMuscleStimulatorLegs" or defName="InstallTacticalCorneaImplant" or defName="InstallConstructorCore" or defName="InstallFarmerCore" or defName="InstallMinerCore" or defName="InstallDoctorCore" or defName="InstallDiplomatCore"]</xpath>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
+</Patch>

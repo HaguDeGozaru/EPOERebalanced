@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+	<!-- ========== Patch all ParentNames ========== -->
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>*/RecipeDef[defName="InstallSimpleProstheticLeg" or defName="InstallSimpleProstheticArm" or defName="InstallLightReceptor" or defName="InstallSimpleProstheticHand" or defName="InstallSimpleProstheticFoot" or defName="InstallArtificialNose" or defName="InstallHydraulicJaw" or defName="InstallArtificialPelvis" or defName="InstallArtificialClavicle"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>SurgeryFlesh</value>
+	</Operation>
+
+	<!-- ========== Patch work time ========== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName="InstallSimpleProstheticLeg" or defName="InstallSimpleProstheticArm" or defName="InstallLightReceptor" or defName="InstallSimpleProstheticHand" or defName="InstallSimpleProstheticFoot" or defName="InstallArtificialNose" or defName="InstallHydraulicJaw" or defName="InstallArtificialPelvis" or defName="InstallArtificialClavicle"]/workAmount</xpath>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
 	<!-- ========== Golden Eye ========== -->
 	<Operation Class="PatchOperationRemove">
 		<xpath>*/RecipeDef[defName="InstallGoldenEye"]</xpath>

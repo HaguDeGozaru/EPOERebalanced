@@ -20,5 +20,13 @@
 			<WorkToBuild>2000</WorkToBuild> <!-- and nobody reports this issue in base EPOE... no more instant workbenches, muahahaha! -->
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[DefName="TableBasicProsthetic"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>BasicProsthetics</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
 
 </Patch>

@@ -25,7 +25,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/HediffDef[defName="EyePatch"]/addedPartProps/partEfficiency</xpath>
 		<value>
-			<partEfficiency>0.01</partEfficiency>
+			<partEfficiency>0</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
@@ -67,7 +67,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/HediffDef[defName="EarBandage"]/addedPartProps/partEfficiency</xpath>
 		<value>
-			<partEfficiency>0.01</partEfficiency>
+			<partEfficiency>0</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
