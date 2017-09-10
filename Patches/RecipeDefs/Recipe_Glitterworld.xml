@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<!-- ========== Patch all ParentNames ========== -->
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>*/RecipeDef[defName="InstallMuscleStimulatorArms" or defName="InstallMuscleStimulatorLegs" or defName="InstallTacticalCorneaImplant" or defName="InstallConstructorCore" or defName="InstallFarmerCore" or defName="InstallMinerCore" or defName="InstallDoctorCore" or defName="InstallDiplomatCore"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SurgeryFlesh</value>
+	<!-- ========== Patch the base ========== -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[@Name="SurgeryGlitterworld"]/surgerySuccessChanceFactor</xpath>
 	</Operation>
-
-	<!-- ========== Patch work time ========== -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="InstallMuscleStimulatorArms" or defName="InstallMuscleStimulatorLegs" or defName="InstallTacticalCorneaImplant" or defName="InstallConstructorCore" or defName="InstallFarmerCore" or defName="InstallMinerCore" or defName="InstallDoctorCore" or defName="InstallDiplomatCore"]</xpath>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[@Name="SurgeryGlitterworld"]/deathOnFailedSurgeryChance</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[@Name="SurgeryGlitterworld"]/workAmount</xpath>
 		<value>
 			<workAmount>2000</workAmount>
 		</value>

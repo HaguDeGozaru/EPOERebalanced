@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<!-- ========== Patch all ParentNames ========== -->
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>*/RecipeDef[defName="InstallNaturalHeart" or defName="InstallNaturalLiver" or defName="InstallNaturalKidney" or defName="InstallNaturalLung" or defName="InstallNaturalEye" or defName="InstallNaturalNose" or defName="InstallNaturalEar" or defName="InstallNaturalJaw" or defName="InstallNaturalArm" or defName="InstallNaturalLeg" or defName="InstallNaturalStomach"]</xpath>
-		<attribute>ParentName</attribute>
-		<value>SurgeryFlesh</value>
+	<!-- ========== Patch the base ========== -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[@Name="SurgeryNatural"]/surgerySuccessChanceFactor</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/RecipeDef[@Name="SurgeryNatural"]/deathOnFailedSurgeryChance</xpath>
 	</Operation>
 
 	<!-- ========== Patch work time ========== -->
