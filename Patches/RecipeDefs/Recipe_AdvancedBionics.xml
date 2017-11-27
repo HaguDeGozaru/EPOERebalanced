@@ -3,15 +3,15 @@
 
 	<!-- ========== Patch the base ========== -->
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/RecipeDef[@Name="SurgeryAdvanced"]/surgerySuccessChanceFactor</xpath>
+		<xpath>Defs/RecipeDef[@Name="SurgeryAdvanced"]/surgerySuccessChanceFactor</xpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/RecipeDef[@Name="SurgeryAdvanced"]/deathOnFailedSurgeryChance</xpath>
+		<xpath>Defs/RecipeDef[@Name="SurgeryAdvanced"]/deathOnFailedSurgeryChance</xpath>
 	</Operation>
 
 	<!-- ========== Patch work time ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="InstallAdvancedPowerArm" or defName="InstallAdvancedBionicArm" or defName="InstallAdvancedBionicLeg" or defName="InstallAdvancedBionicHand" or defName="InstallAdvancedBionicFoot" or defName="InstallAdvancedBionicEye" or defName="InstallAdvancedBionicEar" or defName="InstallAdvancedBionicJaw" or defName="InstallAdvancedBionicSpine" or defName="InstallExoskeletonSuit"]/workAmount</xpath>
+		<xpath>Defs/RecipeDef[defName="InstallAdvancedPowerArm" or defName="InstallAdvancedBionicArm" or defName="InstallAdvancedBionicLeg" or defName="InstallAdvancedBionicHand" or defName="InstallAdvancedBionicFoot" or defName="InstallAdvancedBionicEye" or defName="InstallAdvancedBionicEar" or defName="InstallAdvancedBionicJaw" or defName="InstallAdvancedBionicSpine" or defName="InstallExoskeletonSuit"]/workAmount</xpath>
 		<value>
 			<workAmount>2000</workAmount>
 		</value>
@@ -19,7 +19,7 @@
 
 	<!-- ========== Advanced Bionic Spine ========== -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="InstallAdvancedBionicSpine"]</xpath>
+		<xpath>Defs/RecipeDef[defName="InstallAdvancedBionicSpine"]</xpath>
 		<value>
 			<researchPrerequisite>SpineReplacements</researchPrerequisite>
 		</value>
@@ -27,7 +27,7 @@
 
 	<!-- ========== Exoskeleton Suit ========== -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="InstallExoskeletonSuit"]</xpath>
+		<xpath>Defs/RecipeDef[defName="InstallExoskeletonSuit"]</xpath>
 		<value>
 			<researchPrerequisite>ExoskeletonSuits</researchPrerequisite>
 		</value>

@@ -2,21 +2,21 @@
 <Patch>
 
 	<!-- ========== Golden Eye ========== -->
-	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="GoldenEye"]</xpath>
-	</Operation>
+<!--	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/HediffDef[defName="GoldenEye"]</xpath>
+	</Operation> -->
 
 	<!-- ========== Simple Prosthetic Hand ========== -->
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="SimpleProstheticHand"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="SimpleProstheticHand"]/comps</xpath>
 	</Operation>
 
 	<!-- ========== Simple Prosthetic Arm ========== -->
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="SimpleProstheticArm"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="SimpleProstheticArm"]/comps</xpath>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="SimpleProstheticArm"]/addedPartProps/partEfficiency</xpath>
+		<xpath>Defs/HediffDef[defName="SimpleProstheticArm"]/addedPartProps/partEfficiency</xpath>
 		<value>
 			<partEfficiency>0.5</partEfficiency>
 		</value>
@@ -24,10 +24,10 @@
 
 	<!-- ========== Hydraulic Jaw ========== -->
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="HydraulicJaw"]/stages</xpath>
+		<xpath>Defs/HediffDef[defName="HydraulicJaw"]/stages</xpath>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="HydraulicJaw"]/addedPartProps/partEfficiency</xpath>
+		<xpath>Defs/HediffDef[defName="HydraulicJaw"]/addedPartProps/partEfficiency</xpath>
 		<value>
 			<partEfficiency>0.85</partEfficiency>
 		</value>

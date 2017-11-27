@@ -3,13 +3,13 @@
 
    <!-- ========== Brain Stimulator ========== -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/HediffDef[defName="BrainStimulator"]/stages/li</xpath>
+		<xpath>Defs/HediffDef[defName="BrainStimulator"]/stages/li</xpath>
 		<value>
 			<partIgnoreMissingHP>true</partIgnoreMissingHP>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="BrainStimulator"]/stages/li/capMods</xpath>
+		<xpath>Defs/HediffDef[defName="BrainStimulator"]/stages/li/capMods</xpath>
 		<value>
 			<capMods>
 				<li>
@@ -22,7 +22,7 @@
 
 	<!-- ========== Surrogate Lung ========== -->
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="SurrogateLung"]/stages</xpath>
+		<xpath>Defs/HediffDef[defName="SurrogateLung"]/stages</xpath>
 	</Operation>
 
 </Patch>

@@ -3,25 +3,25 @@
 
 	<!-- ========== Basic Prosthetic Workbench ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableBasicProsthetic"]/costStuffCount</xpath> <!-- Ykara plz. 'DefName' instead of 'defName' initially tripped me up :P -->
+		<xpath>Defs/ThingDef[defName="TableBasicProsthetic"]/costStuffCount</xpath> 
 		<value>
 			<costStuffCount>60</costStuffCount>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableBasicProsthetic"]/CostList/Steel</xpath>
+		<xpath>Defs/ThingDef[defName="TableBasicProsthetic"]/costList/Steel</xpath>
 		<value>
 			<Steel>20</Steel>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableBasicProsthetic"]/statBases/WorkToMake</xpath>
+<!-- Fixed in EPOE 2.1	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TableBasicProsthetic"]/statBases/WorkToMake</xpath>
 		<value>
-			<WorkToBuild>2000</WorkToBuild> <!-- and nobody reports this issue in base EPOE... no more instant workbenches, muahahaha! -->
+			<WorkToBuild>2000</WorkToBuild>
 		</value>
-	</Operation>
+	</Operation> -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[DefName="TableBasicProsthetic"]</xpath>
+		<xpath>Defs/ThingDef[defName="TableBasicProsthetic"]</xpath>
 		<value>
 			<researchPrerequisites>
 				<li>BasicProsthetics</li>

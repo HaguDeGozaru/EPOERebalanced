@@ -3,6 +3,6 @@
   <name>EPOE: Rebalanced</name>
   <author>XeoNovaDan</author>
   <url>https://ludeon.com/forums/index.php?topic=34572.0</url>
-  <targetVersion>0.17.1557</targetVersion>
-  <description>Current Version: v1.4.1\n\nExtensively rebalances items from EPOE:\n* Most recipes and market values have been re-factored\n* Any part above 'Basic' tier also needs the intellectual skill to be crafted\n* All appropriate parts use the part efficiency model as opposed to capacity offsets\n* Various parts themselves (e.g. power arms) have been re-balanced too\n* Top-end parts (i.e. power arms, spines, exoskeletons) all need their own researches\n* Human body parts are no longer ridiculously valuable and can now rot\n* Installed natural organs will be rejected by the body and need treatment\n* Workbench building is less material and more component intensive\n* Raiders have higher prosthetic budgets</description>
+  <targetVersion>0.18.0</targetVersion>
+  <description>Current Version: v1.4.2 (27th Nov 2017)\n\n\nExtensively rebalances items from EPOE:\n* Most recipes and market values have been re-factored\n* Any part above 'Basic' tier also needs the intellectual skill to be crafted\n* All appropriate parts use the part efficiency model as opposed to capacity offsets\n* Various parts themselves (e.g. power arms) have been re-balanced too\n* Top-end parts (i.e. power arms, spines, exoskeletons) all need their own researches\n* Human body parts are no longer ridiculously valuable and can now rot\n* Installed natural organs will be rejected by the body and need treatment\n* Workbench building is less material and more component intensive\n* Raiders have higher prosthetic budgets</description>
 </ModMetaData>

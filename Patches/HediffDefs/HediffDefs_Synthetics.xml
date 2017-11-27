@@ -3,36 +3,36 @@
 
    <!-- ========== AI Chip ========== -->
    <Operation Class="PatchOperationAdd">
-		<xpath>*/HediffDef[defName="AIChip"]/stages/li</xpath>
+		<xpath>Defs/HediffDef[defName="AIChip"]/stages/li</xpath>
 		<value>
 			<partIgnoreMissingHP>true</partIgnoreMissingHP>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="AIChip"]/stages/li/capMods</xpath>
+		<xpath>Defs/HediffDef[defName="AIChip"]/stages/li/capMods</xpath>
 	</Operation>
 
 	<!-- ========== AI Persona Core ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="AIPersonaCore"]/addedPartProps/partEfficiency</xpath>
+		<xpath>Defs/HediffDef[defName="AIPersonaCore"]/addedPartProps/partEfficiency</xpath>
 		<value>
 			<partEfficiency>1.2</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="AIPersonaCore"]/stages/li/capMods/li[1]</xpath>
+		<xpath>Defs/HediffDef[defName="AIPersonaCore"]/stages/li/capMods/li[1]</xpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="AIPersonaCore"]/stages/li/capMods/li[1]</xpath>
+		<xpath>Defs/HediffDef[defName="AIPersonaCore"]/stages/li/capMods/li[1]</xpath>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="AIPersonaCore"]/stages/li/capMods/li/offset</xpath>
+		<xpath>Defs/HediffDef[defName="AIPersonaCore"]/stages/li/capMods/li/offset</xpath>
 		<value>
 			<offset>0.1</offset>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="AIPersonaCore"]/stages/li/mentalStateGivers</xpath>
+		<xpath>Defs/HediffDef[defName="AIPersonaCore"]/stages/li/mentalStateGivers</xpath>
 		<value>
 			<mentalStateGivers>
 				<li>
@@ -49,57 +49,57 @@
 
 	<!-- ========== Synthetic Lung ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="SyntheticLung"]/addedPartProps/partEfficiency</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticLung"]/addedPartProps/partEfficiency</xpath>
 		<value>
 			<partEfficiency>1.4</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="SyntheticLung"]/stages</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticLung"]/stages</xpath>
 	</Operation>
 
 	<!-- ========== Synthetic Stomach ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="SyntheticStomach"]/addedPartProps/partEfficiency</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticStomach"]/addedPartProps/partEfficiency</xpath>
 		<value>
 			<partEfficiency>1.2</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="SyntheticStomach"]/stages</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticStomach"]/stages</xpath>
 	</Operation>
 
 	<!-- ========== Synthetic Liver ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="SyntheticLiver"]/addedPartProps/partEfficiency</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticLiver"]/addedPartProps/partEfficiency</xpath>
 		<value>
 			<partEfficiency>1.2</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="SyntheticLiver"]/stages</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticLiver"]/stages</xpath>
 	</Operation>
 
 	<!-- ========== Synthetic Kidney ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="SyntheticKidney"]/addedPartProps/partEfficiency</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticKidney"]/addedPartProps/partEfficiency</xpath>
 		<value>
 			<partEfficiency>1.4</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="SyntheticKidney"]/stages</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticKidney"]/stages</xpath>
 	</Operation>
 
 	<!-- ========== Synthetic Heart ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="SyntheticHeart"]/addedPartProps/partEfficiency</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticHeart"]/addedPartProps/partEfficiency</xpath>
 		<value>
 			<partEfficiency>1.2</partEfficiency>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="SyntheticHeart"]/stages</xpath>
+		<xpath>Defs/HediffDef[defName="SyntheticHeart"]/stages</xpath>
 	</Operation>
 
 </Patch>

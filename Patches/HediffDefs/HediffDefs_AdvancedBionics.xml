@@ -3,80 +3,80 @@
 
    <!-- ========== Advanced Power Arm ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedPowerArm"]/addedPartProps/partEfficiency</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedPowerArm"]/addedPartProps/partEfficiency</xpath>
       <value>
          <partEfficiency>1.4</partEfficiency>
          <isGoodWeapon>true</isGoodWeapon>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">
-      <xpath>*/HediffDef[defName="AdvancedPowerArm"]/stages</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedPowerArm"]/stages</xpath>
    </Operation>
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedPowerArm"]/comps/li/verbs/li/defaultCooldownTime</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedPowerArm"]/comps/li/tools/li/cooldownTime</xpath>
       <value>
-         <defaultCooldownTime>1.65</defaultCooldownTime>
+         <cooldownTime>1.65</cooldownTime>
       </value>
    </Operation>
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedPowerArm"]/comps/li/verbs/li/meleeDamageBaseAmount</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedPowerArm"]/comps/li/tools/li/power</xpath>
       <value>
-         <meleeDamageBaseAmount>18</meleeDamageBaseAmount>
+         <power>18</power>
       </value>
    </Operation>
 
    <!-- ========== Advanced Bionic Arm ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicArm"]/addedPartProps/partEfficiency</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicArm"]/addedPartProps/partEfficiency</xpath>
       <value>
          <partEfficiency>1.6</partEfficiency>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">
-      <xpath>*/HediffDef[defName="AdvancedBionicArm"]/stages</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicArm"]/stages</xpath>
    </Operation>
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicArm"]/comps/li/verbs/li/defaultCooldownTime</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicArm"]/comps/li/tools/li/cooldownTime</xpath>
       <value>
-         <defaultCooldownTime>1.65</defaultCooldownTime>
+         <cooldownTime>1.65</cooldownTime>
       </value>
    </Operation>
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicArm"]/comps/li/verbs/li/meleeDamageBaseAmount</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicArm"]/comps/li/tools/li/power</xpath>
       <value>
-         <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+         <power>10</power>
       </value>
    </Operation>
 
    <!-- ========== Advanced Bionic Leg ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicLeg"]/addedPartProps/partEfficiency</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicLeg"]/addedPartProps/partEfficiency</xpath>
       <value>
          <partEfficiency>1.6</partEfficiency>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">
-      <xpath>*/HediffDef[defName="AdvancedBionicLeg"]/stages</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicLeg"]/stages</xpath>
    </Operation>
 
    <!-- ========== Advanced Bionic Hand ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicHand"]/addedPartProps/partEfficiency</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicHand"]/addedPartProps/partEfficiency</xpath>
       <value>
          <partEfficiency>1.4</partEfficiency>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">
-      <xpath>*/HediffDef[defName="AdvancedBionicHand"]/stages</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicHand"]/stages</xpath>
    </Operation>
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicHand"]/comps/li/verbs/li/defaultCooldownTime</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicHand"]/comps/li/verbs/li/defaultCooldownTime</xpath>
       <value>
          <defaultCooldownTime>1.65</defaultCooldownTime>
       </value>
    </Operation>
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicHand"]/comps/li/verbs/li/meleeDamageBaseAmount</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicHand"]/comps/li/verbs/li/meleeDamageBaseAmount</xpath>
       <value>
          <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
       </value>
@@ -84,68 +84,68 @@
 
    <!-- ========== Advanced Bionic Foot ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicFoot"]/addedPartProps/partEfficiency</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicFoot"]/addedPartProps/partEfficiency</xpath>
       <value>
          <partEfficiency>1.4</partEfficiency>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">
-      <xpath>*/HediffDef[defName="AdvancedBionicFoot"]/stages</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicFoot"]/stages</xpath>
    </Operation>
 
    <!-- ========== Advanced Bionic Ear ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicEar"]/addedPartProps/partEfficiency</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicEar"]/addedPartProps/partEfficiency</xpath>
       <value>
          <partEfficiency>1.4</partEfficiency>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">
-      <xpath>*/HediffDef[defName="AdvancedBionicEar"]/stages</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicEar"]/stages</xpath>
    </Operation>
 
    <!-- ========== Advanced Bionic Jaw ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicJaw"]/addedPartProps/partEfficiency</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicJaw"]/addedPartProps/partEfficiency</xpath>
       <value>
          <partEfficiency>1.3</partEfficiency>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">
-      <xpath>*/HediffDef[defName="AdvancedBionicJaw"]/stages</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicJaw"]/stages</xpath>
    </Operation>
 
    <!-- ========== Advanced Bionic Eye ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicEye"]/addedPartProps/partEfficiency</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicEye"]/addedPartProps/partEfficiency</xpath>
       <value>
          <partEfficiency>1.6</partEfficiency>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">
-      <xpath>*/HediffDef[defName="AdvancedBionicEye"]/stages</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicEye"]/stages</xpath>
    </Operation>
 
    <!-- ========== Advanced Bionic Spine ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="AdvancedBionicSpine"]/addedPartProps/partEfficiency</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicSpine"]/addedPartProps/partEfficiency</xpath>
       <value>
          <partEfficiency>1.3</partEfficiency>
       </value>
    </Operation>
    <Operation Class="PatchOperationRemove">
-      <xpath>*/HediffDef[defName="AdvancedBionicSpine"]/stages</xpath>
+      <xpath>Defs/HediffDef[defName="AdvancedBionicSpine"]/stages</xpath>
    </Operation>
 
    <!-- ========== Exoskeleton Suit ========== -->
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="ExoskeletonSuit"]/stages/li/capMods/li[1]/offset</xpath>
+      <xpath>Defs/HediffDef[defName="ExoskeletonSuit"]/stages/li/capMods/li[1]/offset</xpath>
       <value>
          <offset>0.2</offset>
       </value>
    </Operation>
    <Operation Class="PatchOperationReplace">
-      <xpath>*/HediffDef[defName="ExoskeletonSuit"]/stages/li/capMods/li[2]/offset</xpath>
+      <xpath>Defs/HediffDef[defName="ExoskeletonSuit"]/stages/li/capMods/li[2]/offset</xpath>
       <value>
          <offset>0.2</offset>
       </value>

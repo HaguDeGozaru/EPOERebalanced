@@ -3,13 +3,13 @@
 
 	<!-- ========== Energized Components ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="EnergizedComponents"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="EnergizedComponents"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>360</MarketValue>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="EnergizedComponents"]/label</xpath>
+		<xpath>Defs/ThingDef[defName="EnergizedComponents"]/label</xpath>
 		<value>
 			<label>energized component</label> <!-- consistency with 'component' from vanilla -->
 		</value>

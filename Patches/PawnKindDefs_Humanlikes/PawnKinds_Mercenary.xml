@@ -4,7 +4,7 @@
 	<!-- grenadier -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[@Name="GrenadierBase"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[@Name="GrenadierBase"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>1000</min>
@@ -16,7 +16,7 @@
 	<!-- gunner -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="MercenaryGunner"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="MercenaryGunner"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>1000</min>
@@ -28,7 +28,7 @@
 	<!-- sniper -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="MercenarySniper"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="MercenarySniper"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>1000</min>
@@ -40,7 +40,7 @@
 	<!-- slasher -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="MercenarySlasher"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="MercenarySlasher"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>2000</min>
@@ -52,7 +52,7 @@
 	<!-- heavy -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="MercenaryHeavy"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="MercenaryHeavy"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>2000</min>
@@ -64,7 +64,7 @@
 	<!-- elite -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[@Name="EliteBase"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[@Name="EliteBase"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>3000</min>
@@ -73,7 +73,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/PawnKindDef[@Name="EliteBase"]/techHediffsTags</xpath>
+		<xpath>Defs/PawnKindDef[@Name="EliteBase"]/techHediffsTags</xpath>
 		<value>
 			<li>AdvancedWeapon</li>
 		</value>

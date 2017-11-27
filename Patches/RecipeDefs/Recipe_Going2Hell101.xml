@@ -3,7 +3,7 @@
 
 	<!-- ========== Mince Organs ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="MinceOrgans"]/products/Human_Meat</xpath>
+		<xpath>Defs/RecipeDef[defName="MinceOrgans"]/products/Human_Meat</xpath>
 		<value>
 			<Human_Meat>2</Human_Meat> <!-- Organs average ~2% coverage, or 1.8 meat -->
 		</value>
@@ -11,7 +11,7 @@
 
 	<!-- ========== Mince Limbs ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="MinceLimbs"]/products/Human_Meat</xpath>
+		<xpath>Defs/RecipeDef[defName="MinceLimbs"]/products/Human_Meat</xpath>
 		<value>
 			<Human_Meat>6</Human_Meat> <!-- Limbs average ~7% coverage, or 6.3 meat -->
 		</value>

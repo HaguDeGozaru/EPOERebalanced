@@ -3,13 +3,13 @@
 
 	<!-- ========== Energized Components ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="MakeEnergizedComponent"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeEnergizedComponent"]/description</xpath>
 		<value>
 			<description>Upgrade a component using uranium, gold and plasteel.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="MakeEnergizedComponent"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeEnergizedComponent"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -48,7 +48,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="MakeEnergizedComponent"]/fixedIngredientFilter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeEnergizedComponent"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
 			<thingDefs>
 				<li>Component</li>
@@ -59,18 +59,15 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="MakeEnergizedComponent"]/skillRequirements/li/minLevel</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeEnergizedComponent"]/skillRequirements/Crafting</xpath>
 		<value>
-			<minLevel>13</minLevel>
+			<Crafting>13</Crafting>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName="MakeEnergizedComponent"]/skillRequirements</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeEnergizedComponent"]/skillRequirements</xpath>
 		<value>
-			<li>
-				<skill>Intellectual</skill>
-				<minLevel>7</minLevel>
-			</li>
+			<Intellectual>7</Intellectual>
 		</value>
 	</Operation>
 

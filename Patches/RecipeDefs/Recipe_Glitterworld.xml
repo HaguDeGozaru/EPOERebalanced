@@ -3,13 +3,13 @@
 
 	<!-- ========== Patch the base ========== -->
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/RecipeDef[@Name="SurgeryGlitterworld"]/surgerySuccessChanceFactor</xpath>
+		<xpath>Defs/RecipeDef[@Name="SurgeryGlitterworld"]/surgerySuccessChanceFactor</xpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/RecipeDef[@Name="SurgeryGlitterworld"]/deathOnFailedSurgeryChance</xpath>
+		<xpath>Defs/RecipeDef[@Name="SurgeryGlitterworld"]/deathOnFailedSurgeryChance</xpath>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[@Name="SurgeryGlitterworld"]/workAmount</xpath>
+		<xpath>Defs/RecipeDef[@Name="SurgeryGlitterworld"]/workAmount</xpath>
 		<value>
 			<workAmount>2000</workAmount>
 		</value>

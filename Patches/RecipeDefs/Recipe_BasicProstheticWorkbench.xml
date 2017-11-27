@@ -3,7 +3,7 @@
 
 	<!-- ========== Steel Arm ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSteelArm"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSteelArm"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -18,7 +18,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSteelArm"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSteelArm"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
 				<thingDefs>
@@ -30,13 +30,13 @@
 
 	<!-- ========== Peg Leg ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreatePegLeg"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreatePegLeg"]/description</xpath>
 		<value>
 			<description>Crafts a peg leg from wood.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreatePegLeg"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreatePegLeg"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -51,7 +51,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreatePegLeg"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="CreatePegLeg"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
 				<thingDefs>
@@ -63,13 +63,13 @@
 
 	<!-- ========== Eye Patch ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateEyePatch"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateEyePatch"]/description</xpath>
 		<value>
 			<description>Crafts an eye patch from fabric/leather.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateEyePatch"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateEyePatch"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -84,7 +84,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateEyePatch"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateEyePatch"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
 				<categories>
@@ -96,13 +96,13 @@
 
 	<!-- ========== Hook Hand ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateHookHand"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateHookHand"]/description</xpath>
 		<value>
 			<description>Crafts a hook hand from steel.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateHookHand"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateHookHand"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -117,7 +117,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateHookHand"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateHookHand"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
 				<thingDefs>
@@ -129,13 +129,13 @@
 
 	<!-- ========== Denture ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateDenture"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateDenture"]/description</xpath>
 		<value>
 			<description>Crafts a denture from wood.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateDenture"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateDenture"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -150,7 +150,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateDenture"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateDenture"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
 				<thingDefs>
@@ -160,18 +160,18 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/RecipeDef[defName="CreateDenture"]/skillRequirements</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateDenture"]/skillRequirements</xpath>
 	</Operation>
 
 	<!-- ========== Wooden Foot ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateWoodenFoot"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateWoodenFoot"]/description</xpath>
 		<value>
 			<description>Crafts a wooden foot from wood.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateWoodenFoot"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateWoodenFoot"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -186,7 +186,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateWoodenFoot"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateWoodenFoot"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
 				<thingDefs>
@@ -195,19 +195,19 @@
 			</fixedIngredientFilter>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>*/RecipeDef[defName="CreateWoodenFoot"]/skillRequirements</xpath>
-	</Operation>
+<!-- Fixed in EPOE 2.1	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="CreateWoodenFoot"]/skillRequirements</xpath>
+	</Operation> -->
 
 	<!-- ========== Ear Bandage ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateEarBandage"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateEarBandage"]/description</xpath>
 		<value>
 			<description>Crafts a wooden foot from wood.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateEarBandage"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateEarBandage"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -222,7 +222,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateEarBandage"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateEarBandage"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
 				<categories>

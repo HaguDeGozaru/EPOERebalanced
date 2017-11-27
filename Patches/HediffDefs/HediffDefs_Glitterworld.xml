@@ -3,7 +3,7 @@
 
 	<!-- ========== Tactical Cornea Implant ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="TacticalCorneaImplant"]/stages/li/statOffsets/ShootingAccuracy</xpath>
+		<xpath>Defs/HediffDef[defName="TacticalCorneaImplant"]/stages/li/statOffsets/ShootingAccuracy</xpath>
 		<value>
 			<ShootingAccuracy>0.125</ShootingAccuracy> <!-- Equivalent to +2.5 levels -->
 		</value>
@@ -11,19 +11,19 @@
 
 	<!-- ========== Auxillary AI (Constructing) ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="ConstructorCore"]/stages/li/statOffsets/ConstructionSpeed</xpath>
+		<xpath>Defs/HediffDef[defName="ConstructorCore"]/stages/li/statOffsets/ConstructionSpeed</xpath>
 		<value>
 			<ConstructionSpeed>0.75</ConstructionSpeed> <!-- Equivalent to +5 levels -->
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/HediffDef[defName="ConstructorCore"]/stages/li/statOffsets</xpath>
+		<xpath>Defs/HediffDef[defName="ConstructorCore"]/stages/li/statOffsets</xpath>
 		<value>
 			<SmoothingSpeed>0.75</SmoothingSpeed> <!-- Equivalent to +5 levels -->
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="ConstructorCore"]/stages/li/statOffsets/ConstructSuccessChance</xpath>
+		<xpath>Defs/HediffDef[defName="ConstructorCore"]/stages/li/statOffsets/ConstructSuccessChance</xpath>
 		<value>
 			<ConstructSuccessChance>0.2</ConstructSuccessChance> <!-- More overhead -->
 		</value>
@@ -31,13 +31,13 @@
 
 	<!-- ========== Auxillary AI (Agricultural) ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="FarmerCore"]/stages/li/statOffsets/PlantWorkSpeed</xpath>
+		<xpath>Defs/HediffDef[defName="FarmerCore"]/stages/li/statOffsets/PlantWorkSpeed</xpath>
 		<value>
 			<PlantWorkSpeed>0.6</PlantWorkSpeed> <!-- Equivalent to +5 levels -->
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="FarmerCore"]/stages/li/statOffsets/PlantHarvestYield</xpath>
+		<xpath>Defs/HediffDef[defName="FarmerCore"]/stages/li/statOffsets/PlantHarvestYield</xpath>
 		<value>
 			<PlantHarvestYield>0.2</PlantHarvestYield> <!-- More overhead -->
 		</value>
@@ -45,16 +45,16 @@
 
 	<!-- ========== Auxillary AI (Mining) ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="MinerCore"]/stages/li/statOffsets/MiningSpeed</xpath>
+		<xpath>Defs/HediffDef[defName="MinerCore"]/stages/li/statOffsets/MiningSpeed</xpath>
 		<value>
 			<MiningSpeed>0.6</MiningSpeed> <!-- Equivalent to +5 levels -->
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>*/HediffDef[defName="MinerCore"]/stages/li/statOffsets/SmoothingSpeed</xpath> <!-- Smoothing speed doesn't scale with mining -->
+		<xpath>Defs/HediffDef[defName="MinerCore"]/stages/li/statOffsets/SmoothingSpeed</xpath> <!-- Smoothing speed doesn't scale with mining -->
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/HediffDef[defName="MinerCore"]/stages/li/statOffsets</xpath>
+		<xpath>Defs/HediffDef[defName="MinerCore"]/stages/li/statOffsets</xpath>
 		<value>
 			<MiningYield>0.2</MiningYield> <!-- More overhead -->
 		</value>
@@ -62,13 +62,13 @@
 
 	<!-- ========== Auxillary AI (Medical) ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="DoctorCore"]/stages/li/statOffsets/MedicalTendQuality</xpath>
+		<xpath>Defs/HediffDef[defName="DoctorCore"]/stages/li/statOffsets/MedicalTendQuality</xpath>
 		<value>
 			<MedicalTendQuality>0.5</MedicalTendQuality> <!-- Equivalent to +5 levels -->
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="DoctorCore"]/stages/li/statOffsets/MedicalTendSpeed</xpath>
+		<xpath>Defs/HediffDef[defName="DoctorCore"]/stages/li/statOffsets/MedicalTendSpeed</xpath>
 		<value>
 			<MedicalTendSpeed>0.3</MedicalTendSpeed> <!-- Equivalent to +5 levels -->
 		</value>
@@ -76,15 +76,15 @@
 
 	<!-- ========== Auxillary AI (Diplomatic) ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="DiplomatCore"]/stages/li/statOffsets/RecruitPrisonerChance</xpath>
+		<xpath>Defs/HediffDef[defName="DiplomatCore"]/stages/li/statOffsets/RecruitPrisonerChance</xpath>
 		<value>
 			<RecruitPrisonerChance>0.2</RecruitPrisonerChance> <!-- Equivalent to +5 levels -->
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/HediffDef[defName="DiplomatCore"]/stages/li/statOffsets/GiftImpact</xpath>
+		<xpath>Defs/HediffDef[defName="DiplomatCore"]/stages/li/statOffsets/SocialImpact</xpath>
 		<value>
-			<GiftImpact>0.25</GiftImpact> <!-- Equivalent to +5 levels -->
+			<SocialImpact>0.25</SocialImpact> <!-- Equivalent to +5 levels -->
 		</value>
 	</Operation>
 

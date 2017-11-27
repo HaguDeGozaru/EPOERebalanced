@@ -3,34 +3,34 @@
 
 	<!-- ========== Bionics Workbench ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableBionics"]/CostList/Steel</xpath> <!-- had to read it ;) -->
+		<xpath>Defs/ThingDef[defName="TableBionics"]/costList/Steel</xpath> <!-- had to read it ;) -->
 		<value>
 			<Steel>120</Steel>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableBionics"]/CostList/Plasteel</xpath>
+		<xpath>Defs/ThingDef[defName="TableBionics"]/costList/Plasteel</xpath>
 		<value>
 			<Plasteel>40</Plasteel>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableBionics"]/CostList/Component</xpath>
+		<xpath>Defs/ThingDef[defName="TableBionics"]/costList/Component</xpath>
 		<value>
 			<Component>8</Component>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[DefName="TableBionics"]/recipes/li[1]</xpath>
+		<xpath>Defs/ThingDef[defName="TableBionics"]/recipes/li[1]</xpath>
 		<value>
 			<li>CreatePowerClaw</li>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableBionics"]/statBases/WorkToMake</xpath>
+<!-- Fixed in EPOE 2.1		<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TableBionics"]/statBases/WorkToMake</xpath>
 		<value>
 			<WorkToBuild>4500</WorkToBuild>
 		</value>
-	</Operation>
+	</Operation> -->
 
 </Patch>

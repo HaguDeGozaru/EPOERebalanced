@@ -3,13 +3,13 @@
 
 	<!-- ========== Base ========== -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>/ThingDefs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
+		<xpath>Defs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
 		<value>
 			<tickerType>Rare</tickerType>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>/ThingDefs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
+		<xpath>Defs/ThingDef[@Name="BodyPartNaturalBase"]</xpath>
 		<value>
 			<comps>
 				<li Class="CompProperties_Rottable">
@@ -22,7 +22,7 @@
 
 	<!-- ========== Leg ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Leg"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Leg"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>400</MarketValue>
 		</value>
@@ -30,7 +30,7 @@
 
 	<!-- ========== Arm ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Arm"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Arm"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>400</MarketValue>
 		</value>
@@ -38,7 +38,7 @@
 
 	<!-- ========== Stomach ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Stomach"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Stomach"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>500</MarketValue>
 		</value>
@@ -46,7 +46,7 @@
 
 	<!-- ========== Heart ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Heart"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Heart"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>500</MarketValue>
 		</value>
@@ -54,7 +54,7 @@
 
 	<!-- ========== Liver ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Liver"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Liver"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>500</MarketValue>
 		</value>
@@ -62,7 +62,7 @@
 
 	<!-- ========== Lung ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Lung"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Lung"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>400</MarketValue>
 		</value>
@@ -70,7 +70,7 @@
 
 	<!-- ========== Kidney ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Kidney"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Kidney"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>250</MarketValue>
 		</value>
@@ -78,7 +78,7 @@
 
 	<!-- ========== Eyeball ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Eye"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Eye"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>250</MarketValue>
 		</value>
@@ -86,7 +86,7 @@
 
 	<!-- ========== Nose ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Nose"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Nose"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>250</MarketValue>
 		</value>
@@ -94,7 +94,7 @@
 
 	<!-- ========== Ear ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Ear"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Ear"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>250</MarketValue>
 		</value>
@@ -102,7 +102,7 @@
 
 	<!-- ========== Jaw ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Jaw"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Jaw"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>250</MarketValue>
 		</value>

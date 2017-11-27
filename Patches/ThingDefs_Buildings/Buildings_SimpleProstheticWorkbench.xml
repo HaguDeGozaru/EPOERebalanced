@@ -3,25 +3,25 @@
 
 	<!-- ========== Simple Prosthetics Workbench ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableSimpleProsthetic"]/CostList/Steel</xpath>
+		<xpath>Defs/ThingDef[defName="TableSimpleProsthetic"]/costList/Steel</xpath>
 		<value>
 			<Steel>120</Steel>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableSimpleProsthetic"]/CostList/Component</xpath>
+		<xpath>Defs/ThingDef[defName="TableSimpleProsthetic"]/costList/Component</xpath>
 		<value>
 			<Component>5</Component>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>*/ThingDef[DefName="TableSimpleProsthetic"]/recipes/li[10]</xpath> <!-- removes golden eye recipe -->
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[DefName="TableSimpleProsthetic"]/statBases/WorkToMake</xpath>
+<!--	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TableSimpleProsthetic"]/recipes/li[10]</xpath> removes golden eye recipe
+	</Operation> -->
+<!-- Fixed in EPOE 2.1	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TableSimpleProsthetic"]/statBases/WorkToMake</xpath>
 		<value>
 			<WorkToBuild>3000</WorkToBuild>
 		</value>
-	</Operation>
+	</Operation> <-->
 
 </Patch>

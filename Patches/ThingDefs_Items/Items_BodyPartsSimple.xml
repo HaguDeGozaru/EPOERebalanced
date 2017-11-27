@@ -2,13 +2,13 @@
 <Patch>
 
 	<!-- ========== Golden Eye ========== -->
-	<Operation Class="PatchOperationRemove">
+<!--	<Operation Class="PatchOperationRemove">
 		<xpath>*/ThingDef[defName="GoldenEye"]</xpath>
-	</Operation>
+	</Operation> -->
 
 	<!-- ========== Artificial Nose ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="ArtificialNose"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="ArtificialNose"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>200</MarketValue>
 		</value>
@@ -16,7 +16,7 @@
 
 	<!-- ========== Hydraulic Jaw ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="HydraulicJaw"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="HydraulicJaw"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>350</MarketValue>
 		</value>
@@ -24,7 +24,7 @@
 
 	<!-- ========== Light Receptor ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="LightReceptor"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="LightReceptor"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>350</MarketValue>
 		</value>
@@ -32,7 +32,7 @@
 
 	<!-- ========== Simple Prosthetic Hand ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SimpleProstheticHand"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SimpleProstheticHand"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>350</MarketValue>
 		</value>
@@ -40,7 +40,7 @@
 
 	<!-- ========== Simple Prosthetic Foot ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SimpleProstheticFoot"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SimpleProstheticFoot"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>350</MarketValue>
 		</value>
@@ -48,7 +48,7 @@
 
 	<!-- ========== Simple Prosthetic Leg ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SimpleProstheticLeg"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SimpleProstheticLeg"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>650</MarketValue>
 		</value>
@@ -56,7 +56,7 @@
 
 	<!-- ========== Simple Prosthetic Arm ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SimpleProstheticArm"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SimpleProstheticArm"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>650</MarketValue>
 		</value>
@@ -64,7 +64,7 @@
 
 	<!-- ========== Artificial Pelvis ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="ArtificialPelvis"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="ArtificialPelvis"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>375</MarketValue>
 		</value>
@@ -72,7 +72,7 @@
 
 	<!-- ========== Artificial Clavicle ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="ArtificialClavicle"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="ArtificialClavicle"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>200</MarketValue>
 		</value>

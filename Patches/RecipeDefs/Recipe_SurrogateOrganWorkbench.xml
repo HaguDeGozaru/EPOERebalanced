@@ -3,30 +3,27 @@
 
 	<!-- ========== Base ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[@Name="RecipeSurrogateOrgan"]/workAmount</xpath>
+		<xpath>Defs/RecipeDef[@Name="RecipeSurrogateOrgan"]/workAmount</xpath>
 		<value>
 			<workAmount>6250</workAmount> <!-- 2.5 ingame hours -->
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[@Name="RecipeSurrogateOrgan"]/skillRequirements</xpath>
+		<xpath>Defs/RecipeDef[@Name="RecipeSurrogateOrgan"]/skillRequirements</xpath>
 		<value>
-			<li>
-				<skill>Intellectual</skill>
-				<minLevel>7</minLevel>
-			</li>
+			<Intellectual>7</Intellectual>
 		</value>
 	</Operation>
 
 	<!-- ========== Brain Stimulator ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateBrainStimulator"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateBrainStimulator"]/description</xpath>
 		<value>
 			<description>Crafts a brain stimulator from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateBrainStimulator"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateBrainStimulator"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -65,7 +62,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateBrainStimulator"]/fixedIngredientFilter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateBrainStimulator"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
 			<thingDefs>
 				<li>Cloth</li>
@@ -78,13 +75,13 @@
 
 	<!-- ========== Surrogate Lung ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLung"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateLung"]/description</xpath>
 		<value>
 			<description>Crafts a surrogate lung from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLung"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateLung"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -123,7 +120,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLung"]/fixedIngredientFilter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateLung"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
 			<thingDefs>
 				<li>Cloth</li>
@@ -136,13 +133,13 @@
 
 	<!-- ========== Surrogate Stomach ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateStomach"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateStomach"]/description</xpath>
 		<value>
 			<description>Crafts a surrogate stomach from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateStomach"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateStomach"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -181,7 +178,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateStomach"]/fixedIngredientFilter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateStomach"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
 			<thingDefs>
 				<li>Cloth</li>
@@ -194,13 +191,13 @@
 
 	<!-- ========== Surrogate Liver ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLiver"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateLiver"]/description</xpath>
 		<value>
 			<description>Crafts a surrogate liver from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLiver"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateLiver"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -239,7 +236,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateLiver"]/fixedIngredientFilter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateLiver"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
 			<thingDefs>
 				<li>Cloth</li>
@@ -252,13 +249,13 @@
 
 	<!-- ========== Surrogate Kidney ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateKidney"]/description</xpath>
 		<value>
 			<description>Crafts a surrogate kidney from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateKidney"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -297,7 +294,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateKidney"]/fixedIngredientFilter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateKidney"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
 			<thingDefs>
 				<li>Cloth</li>
@@ -310,13 +307,13 @@
 
 	<!-- ========== Surrogate Heart ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateHeart"]/description</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateHeart"]/description</xpath>
 		<value>
 			<description>Crafts a surrogate heart from cloth, steel, plasteel, and components.</description>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateHeart"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateHeart"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -355,7 +352,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/RecipeDef[defName="CreateSurrogateHeart"]/fixedIngredientFilter/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="CreateSurrogateHeart"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
 			<thingDefs>
 				<li>Cloth</li>

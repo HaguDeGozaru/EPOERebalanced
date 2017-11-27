@@ -3,7 +3,7 @@
 
 	<!-- ========== AI Chip ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="AIChip"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="AIChip"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>2500</MarketValue>
 		</value>
@@ -11,7 +11,7 @@
 
 	<!-- ========== Joywire ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Joywire"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Joywire"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>2500</MarketValue>
 		</value>
@@ -19,7 +19,7 @@
 
 	<!-- ========== Painstopper ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Painstopper"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="Painstopper"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>2500</MarketValue>
 		</value>
@@ -27,7 +27,7 @@
 
 	<!-- ========== Synthetic Lung ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SyntheticLung"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SyntheticLung"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>1250</MarketValue>
 		</value>
@@ -35,7 +35,7 @@
 
 	<!-- ========== Synthetic Stomach ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SyntheticStomach"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SyntheticStomach"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>2000</MarketValue>
 		</value>
@@ -43,7 +43,7 @@
 
 	<!-- ========== Synthetic Liver ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SyntheticLiver"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SyntheticLiver"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>2000</MarketValue>
 		</value>
@@ -51,7 +51,7 @@
 
 	<!-- ========== Synthetic Kidney ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SyntheticKidney"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SyntheticKidney"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>1250</MarketValue>
 		</value>
@@ -59,7 +59,7 @@
 
 	<!-- ========== Synthetic Heart ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SyntheticHeart"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SyntheticHeart"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>2000</MarketValue>
 		</value>
@@ -67,7 +67,7 @@
 
 	<!-- ========== Synthetic Skin ========== -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="SyntheticSkin"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="SyntheticSkin"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>1250</MarketValue>
 		</value>

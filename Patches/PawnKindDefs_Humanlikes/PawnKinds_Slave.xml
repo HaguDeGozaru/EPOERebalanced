@@ -4,7 +4,7 @@
 	<!-- slave -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="Slave"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="Slave"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>40</min>

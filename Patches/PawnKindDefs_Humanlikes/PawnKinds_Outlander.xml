@@ -4,7 +4,7 @@
 	<!-- villager -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="Villager"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="Villager"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>150</min>
@@ -16,7 +16,7 @@
 	<!-- town guard -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="TownGuard"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="TownGuard"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>150</min>

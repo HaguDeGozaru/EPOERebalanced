@@ -4,7 +4,7 @@
 	<!-- drifter -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="Drifter"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="Drifter"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>40</min>
@@ -16,7 +16,7 @@
 	<!-- scavenger -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="Scavenger"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="Scavenger"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>40</min>
@@ -28,7 +28,7 @@
 	<!-- thrasher -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="Thrasher"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="Thrasher"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>40</min>
@@ -40,7 +40,7 @@
 	<!-- pirate -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="Pirate"]/techHediffsMoney</xpath>
+		<xpath>Defs/PawnKindDef[defName="Pirate"]/techHediffsMoney</xpath>
 		<value>
 			<techHediffsMoney>
 				<min>40</min>
