@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <NaturalOrganRejection.label>拒絶反応</NaturalOrganRejection.label>
+    <NaturalOrganRejection.stages.0.label>治療済み</NaturalOrganRejection.stages.0.label>
+    <NaturalOrganRejection.stages.1.label>微細</NaturalOrganRejection.stages.1.label>
+    <NaturalOrganRejection.stages.2.label>中等</NaturalOrganRejection.stages.2.label>
+    <NaturalOrganRejection.stages.3.label>重度</NaturalOrganRejection.stages.3.label>
+    <NaturalOrganRejection.stages.4.label>崩壊</NaturalOrganRejection.stages.4.label>
+
+
+</LanguageData>

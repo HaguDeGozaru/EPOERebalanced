@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <RetractableClaws.label>引き込み式爪</RetractableClaws.label>
+  <SpineReplacements.label>人工背骨</SpineReplacements.label>
+  <FlexibleClaws.label>変形式爪</FlexibleClaws.label>
+  <AdvancedSpineReplacements.label>先進人工背骨</AdvancedSpineReplacements.label>
+  <ExoskeletonSuits.label>強化外骨格</ExoskeletonSuits.label>
+
+</LanguageData>
